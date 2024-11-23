@@ -164,3 +164,7 @@ cython_debug/
 .checkpoints/
 checkpoints
 checkpoints/*
+
+.wandb/
+wandb
+wandb/*
