@@ -5,6 +5,25 @@ from PIL import Image
 import torch
 from torchvision import transforms as T
 
+
+import random
+import numpy as np
+import torch
+
+def set_seed(seed: int):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+
+# Set a fixed seed
+set_seed(67120349)
+
+
 class FrameImageDataset(torch.utils.data.Dataset):
     def __init__(self, 
     root_dir='/work3/ppar/data/ucf101',
@@ -89,30 +108,61 @@ class FrameVideoDataset(torch.utils.data.Dataset):
 
         return frames
 
+def get_transforms(rotation_degree = 30, transform_size = 128 ):
+
+    normalize_array= ([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+    data_transforms = {
+    'train': T.Compose([
+        T.RandomRotation(rotation_degree),
+        T.RandomResizedCrop(transform_size),
+        T.RandomHorizontalFlip(),
+        T.ColorJitter(),
+        T.ToTensor(),
+        T.Normalize(normalize_array[0], normalize_array[1]) 
+        
+    ]),    
+    'val': T.Compose([
+        T.Resize(transform_size),
+        T.CenterCrop(transform_size),
+        T.ToTensor(),
+        T.Normalize(normalize_array[0], normalize_array[1])    
+         ]),
+    'test': 
+    T.Compose([
+        T.Resize(transform_size),
+        T.CenterCrop(transform_size),
+        T.ToTensor(),
+        T.Normalize(normalize_array[0], normalize_array[1]) 
+    ])
+    }
+    return data_transforms
 
 if __name__ == '__main__':
     from torch.utils.data import DataLoader
 
-    root_dir = '/work3/ppar/data/ucf101'
+    root_dir = './data/ufc10/'
 
     transform = T.Compose([T.Resize((64, 64)),T.ToTensor()])
+    print('loading validation split .')
     frameimage_dataset = FrameImageDataset(root_dir=root_dir, split='val', transform=transform)
+    print('loading validation split ..')
     framevideostack_dataset = FrameVideoDataset(root_dir=root_dir, split='val', transform=transform, stack_frames = True)
+    print('loading validation split ...')
     framevideolist_dataset = FrameVideoDataset(root_dir=root_dir, split='val', transform=transform, stack_frames = False)
-
-
-    frameimage_loader = DataLoader(frameimage_dataset,  batch_size=8, shuffle=False)
+    print('loading done')
+    
+    # frameimage_loader = DataLoader(frameimage_dataset,  batch_size=8, shuffle=False)
     framevideostack_loader = DataLoader(framevideostack_dataset,  batch_size=8, shuffle=False)
     framevideolist_loader = DataLoader(framevideolist_dataset,  batch_size=8, shuffle=False)
 
     # for frames, labels in frameimage_loader:
-    #     print(frames.shape, labels.shape) # [batch, channels, height, width]
+    #     print(frames.shape, labels, labels.shape) # [batch, channels, height, width]
 
-    # for video_frames, labels in framevideolist_loader:
-    #     print(45*'-')
-    #     for frame in video_frames: # loop through number of frames
-    #         print(frame.shape, labels.shape)# [batch, channels, height, width]
+    for video_frames, labels in framevideolist_loader:
+        print(45*'-')
+        for frame in video_frames: # loop through number of frames
+            print(frame.shape, labels.shape)# [batch, channels, height, width]
 
-    for video_frames, labels in framevideostack_loader:
-        print(video_frames.shape, labels.shape) # [batch, channels, number of frames, height, width]
+    # for video_frames, labels in framevideostack_loader:
+    #     print(video_frames.shape, labels.shape) # [batch, channels, number of frames, height, width]
             

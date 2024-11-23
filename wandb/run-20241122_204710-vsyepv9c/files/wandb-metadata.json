@@ -1,0 +1,32 @@
+{
+  "os":  "Linux-6.1.112-1.el9.elrepo.x86_64-x86_64-with-glibc2.34",
+  "python":  "3.10.13",
+  "startedAt":  "2024-11-22T19:47:10.618908Z",
+  "program":  "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py",
+  "codePath":  "every_frame_classification.py",
+  "git":  {
+    "remote":  "https://github.com/clarachristiansen/IDLCV_VC.git",
+    "commit":  "dc7132beee0366ea33e813832a0fdad12b312b02"
+  },
+  "email":  "s164248@student.dtu.dk",
+  "root":  "/zhome/88/7/117159/Courses/IDLCV_VC",
+  "host":  "hpclogin1",
+  "username":  "s164248",
+  "executable":  "/zhome/88/7/117159/venv/bin/python",
+  "codePathLocal":  "every_frame_classification.py",
+  "cpu_count":  16,
+  "cpu_count_logical":  16,
+  "disk":  {
+    "/":  {
+      "total":  "76817485824",
+      "used":  "7201001472"
+    }
+  },
+  "memory":  {
+    "total":  "201592315904"
+  },
+  "cpu":  {
+    "count":  16,
+    "countLogical":  16
+  }
+}

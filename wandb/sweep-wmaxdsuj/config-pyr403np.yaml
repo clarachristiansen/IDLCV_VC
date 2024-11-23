@@ -1,0 +1,14 @@
+wandb_version: 1
+
+batch_size:
+  value: 32
+dropout:
+  value: 0.5
+epochs:
+  value: 10
+image_size:
+  value: 128
+learning_rate:
+  value: 0.01
+num_layers:
+  value: 5
