@@ -1,0 +1,65 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 23245555: <testjob> in cluster <dcc> Exited
+
+Job <testjob> was submitted from host <hpclogin1> by user <s164248> in cluster <dcc> at Sat Nov 23 14:20:22 2024
+Job was executed on host(s) <4*n-62-18-8>, in queue <c02516>, as user <s164248> in cluster <dcc> at Sat Nov 23 14:20:22 2024
+</zhome/88/7/117159> was used as the home directory.
+</zhome/88/7/117159/Courses/IDLCV_VC> was used as the working directory.
+Started at Sat Nov 23 14:20:22 2024
+Terminated at Sat Nov 23 16:47:56 2024
+Results reported at Sat Nov 23 16:47:56 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -q c02516
+
+#BSUB -gpu "num=1:mode=exclusive_process"
+
+#BSUB -J testjob
+
+#BSUB -n 4
+
+#BSUB -R "span[hosts=1]"
+
+#BSUB -R "rusage[mem=20GB]"
+
+#BSUB -W 12:00
+
+#BSUB -o OUTPUT_FILE%J.out
+#BSUB -e OUTPUT_FILE%e.err
+
+source /zhome/88/7/117159/venv/bin/activate
+
+python /zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   7638.61 sec.
+    Max Memory :                                 1091 MB
+    Average Memory :                             927.10 MB
+    Total Requested Memory :                     81920.00 MB
+    Delta Memory :                               80829.00 MB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                27
+    Run time :                                   8952 sec.
+    Turnaround time :                            8854 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <OUTPUT_FILE%e.err> for stderr output of this job.
+

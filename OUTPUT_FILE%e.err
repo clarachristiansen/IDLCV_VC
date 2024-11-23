@@ -13083,3 +13083,2107 @@ Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
   warnings.warn(msg)
   0%|          | 0/10 [00:00<?, ?epoch/s]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 10%|█         | 1/10 [00:30<04:30, 30.10s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 20%|██        | 2/10 [01:00<04:02, 30.30s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 30%|███       | 3/10 [01:32<03:37, 31.03s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 40%|████      | 4/10 [02:02<03:04, 30.75s/epoch] 50%|█████     | 5/10 [02:33<02:32, 30.59s/epoch] 60%|██████    | 6/10 [03:03<02:02, 30.69s/epoch] 70%|███████   | 7/10 [03:34<01:31, 30.48s/epoch] 80%|████████  | 8/10 [04:04<01:00, 30.47s/epoch] 90%|█████████ | 9/10 [04:34<00:30, 30.29s/epoch]100%|██████████| 10/10 [05:05<00:00, 30.61s/epoch]100%|██████████| 10/10 [05:05<00:00, 30.57s/epoch]
+wandb: - 0.010 MB of 0.010 MB uploadedwandb: \ 0.012 MB of 0.012 MB uploadedwandb: | 0.012 MB of 0.012 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁▂▃▃▄▅▆▆▇█
+wandb:        test_acc ▁▁▂▂▂▅▇▅▇█
+wandb:         test_f1 ▁▁▂▃▂▄▇▅▇█
+wandb:  test_precision ▁▁▃▄▃▅▇▆▇█
+wandb:     test_recall ▁▁▂▂▂▅▇▅▇█
+wandb:       train_acc ▁▁▂▃▄▄▆▆▇█
+wandb:      train_loss █▆▅▅▄▄▃▂▂▁
+wandb:          val_f1 ▁▂▃▃▃▆▆▄▇█
+wandb:   val_precision ▁▂▄▃▃▆▇▅▇█
+wandb:      val_recall ▁▂▂▃▂▆▆▄▇█
+wandb:  validation_acc ▁▂▂▃▂▆▆▄▇█
+wandb: validation_loss █▄▄▃▄▃▁▄▁▂
+wandb: 
+wandb: Run summary:
+wandb:           epoch 9
+wandb:          run_id 65uxqpef
+wandb:        test_acc 0.46583
+wandb:         test_f1 0.46437
+wandb:  test_precision 0.48317
+wandb:     test_recall 0.46583
+wandb:       train_acc 0.4828
+wandb:      train_loss 1.52987
+wandb:          val_f1 0.42982
+wandb:   val_precision 0.49442
+wandb:      val_recall 0.43
+wandb:  validation_acc 0.43
+wandb: validation_loss 1.93175
+wandb: 
+wandb: 🚀 View run classic-sweep-24 at: https://wandb.ai/idlcv/Video_initial_resnet/runs/65uxqpef
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_initial_resnet
+wandb: Synced 4 W&B file(s), 0 media file(s), 3 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20241123_162411-65uxqpef/logs
+wandb: Agent Starting Run: 9unp7fto with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 10
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.001
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_162927-9unp7fto
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run exalted-sweep-25
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_initial_resnet
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_initial_resnet/sweeps/yzqnynnm
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_initial_resnet/runs/9unp7fto
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/10 [00:00<?, ?epoch/s] 10%|█         | 1/10 [00:40<06:02, 40.23s/epoch] 20%|██        | 2/10 [01:13<04:49, 36.18s/epoch] 30%|███       | 3/10 [01:46<04:04, 34.86s/epoch] 40%|████      | 4/10 [02:20<03:25, 34.21s/epoch] 50%|█████     | 5/10 [02:54<02:51, 34.39s/epoch] 60%|██████    | 6/10 [03:34<02:24, 36.14s/epoch] 70%|███████   | 7/10 [04:10<01:48, 36.10s/epoch] 80%|████████  | 8/10 [04:49<01:14, 37.19s/epoch] 90%|█████████ | 9/10 [05:26<00:37, 37.16s/epoch]100%|██████████| 10/10 [06:00<00:00, 35.96s/epoch]100%|██████████| 10/10 [06:00<00:00, 36.02s/epoch]
+wandb: - 0.007 MB of 0.007 MB uploadedwandb: \ 0.007 MB of 0.007 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁▂▃▃▄▅▆▆▇█
+wandb:        test_acc ▁▃▄▆▇▇▇▇▇█
+wandb:         test_f1 ▁▃▄▆▇▇▇▇▇█
+wandb:  test_precision ▁▃▅▆▇▇▇▇██
+wandb:     test_recall ▁▃▄▆▇▇▇▇▇█
+wandb:       train_acc ▁▃▄▅▆▇▇███
+wandb:      train_loss █▆▅▄▃▃▂▂▁▁
+wandb:          val_f1 ▁▄▅▅▆▇▇▇██
+wandb:   val_precision ▁▄▅▆▆▇▇▇██
+wandb:      val_recall ▁▄▅▅▆▇▇▇██
+wandb:  validation_acc ▁▄▅▅▆▇▇▇██
+wandb: validation_loss █▅▄▇▅▂▁▃▁▂
+wandb: 
+wandb: Run summary:
+wandb:           epoch 9
+wandb:          run_id 9unp7fto
+wandb:        test_acc 0.85833
+wandb:         test_f1 0.8598
+wandb:  test_precision 0.86671
+wandb:     test_recall 0.85833
+wandb:       train_acc 0.7982
+wandb:      train_loss 0.61399
+wandb:          val_f1 0.84563
+wandb:   val_precision 0.8467
+wandb:      val_recall 0.84667
+wandb:  validation_acc 0.84667
+wandb: validation_loss 0.81742
+wandb: 
+wandb: 🚀 View run exalted-sweep-25 at: https://wandb.ai/idlcv/Video_initial_resnet/runs/9unp7fto
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_initial_resnet
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20241123_162927-9unp7fto/logs
+wandb: Agent Starting Run: tzpr15tl with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 10
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.01
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_163535-tzpr15tl
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run hearty-sweep-26
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_initial_resnet
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_initial_resnet/sweeps/yzqnynnm
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_initial_resnet/runs/tzpr15tl
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/10 [00:00<?, ?epoch/s]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 10%|█         | 1/10 [01:01<09:10, 61.17s/epoch]
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+    zip_file.write_record('data.pkl', data_value, len(data_value))
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+    save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+    torch.save(checkpoint, path)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁█
+wandb:        test_acc █▁
+wandb:         test_f1 █▁
+wandb:  test_precision █▁
+wandb:     test_recall █▁
+wandb:       train_acc ▁█
+wandb:      train_loss █▁
+wandb:          val_f1 ▁█
+wandb:   val_precision ▁█
+wandb:      val_recall ▁█
+wandb:  validation_acc ▁█
+wandb: validation_loss ▁█
+wandb: 
+wandb: Run summary:
+wandb:           epoch 1
+wandb:          run_id tzpr15tl
+wandb:        test_acc 0.17333
+wandb:         test_f1 0.1222
+wandb:  test_precision 0.09803
+wandb:     test_recall 0.17333
+wandb:       train_acc 0.1822
+wandb:      train_loss 2.20149
+wandb:          val_f1 0.12859
+wandb:   val_precision 0.19862
+wandb:      val_recall 0.18167
+wandb:  validation_acc 0.18167
+wandb: validation_loss 2.25789
+wandb: 
+wandb: 🚀 View run hearty-sweep-26 at: https://wandb.ai/idlcv/Video_initial_resnet/runs/tzpr15tl
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_initial_resnet
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20241123_163535-tzpr15tl/logs
+Run tzpr15tl errored:
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+    zip_file.write_record('data.pkl', data_value, len(data_value))
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+    save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+    torch.save(checkpoint, path)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+
+wandb: ERROR Run tzpr15tl errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+wandb: ERROR     _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+wandb: ERROR     zip_file.write_record('data.pkl', data_value, len(data_value))
+wandb: ERROR RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+wandb: ERROR 
+wandb: ERROR During handling of the above exception, another exception occurred:
+wandb: ERROR 
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+wandb: ERROR     _train_every_frame(model, optimizer, criterion,
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+wandb: ERROR     save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+wandb: ERROR     torch.save(checkpoint, path)
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+wandb: ERROR     with _open_zipfile_writer(f) as opened_zipfile:
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+wandb: ERROR     self.file_like.write_end_of_file()
+wandb: ERROR RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+wandb: ERROR 
+wandb: Agent Starting Run: jdemoaur with config:
+wandb: 	batch_size: 32
+wandb: 	epochs: 10
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.01
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_163643-jdemoaur
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fluent-sweep-27
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_initial_resnet
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_initial_resnet/sweeps/yzqnynnm
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_initial_resnet/runs/jdemoaur
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/10 [00:00<?, ?epoch/s]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 10%|█         | 1/10 [00:58<08:43, 58.12s/epoch]
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+    zip_file.write_record('data.pkl', data_value, len(data_value))
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+    save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+    torch.save(checkpoint, path)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁█
+wandb:        test_acc █▁
+wandb:         test_f1 █▁
+wandb:  test_precision █▁
+wandb:     test_recall █▁
+wandb:       train_acc ▁█
+wandb:      train_loss █▁
+wandb:          val_f1 ▁█
+wandb:   val_precision █▁
+wandb:      val_recall ▁█
+wandb:  validation_acc ▁█
+wandb: validation_loss █▁
+wandb: 
+wandb: Run summary:
+wandb:           epoch 1
+wandb:          run_id jdemoaur
+wandb:        test_acc 0.12917
+wandb:         test_f1 0.0593
+wandb:  test_precision 0.05747
+wandb:     test_recall 0.12917
+wandb:       train_acc 0.1396
+wandb:      train_loss 2.2759
+wandb:          val_f1 0.07027
+wandb:   val_precision 0.04671
+wandb:      val_recall 0.15833
+wandb:  validation_acc 0.15833
+wandb: validation_loss 2.24012
+wandb: 
+wandb: 🚀 View run fluent-sweep-27 at: https://wandb.ai/idlcv/Video_initial_resnet/runs/jdemoaur
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_initial_resnet
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20241123_163643-jdemoaur/logs
+Run jdemoaur errored:
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+    zip_file.write_record('data.pkl', data_value, len(data_value))
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+    save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+    torch.save(checkpoint, path)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+
+wandb: ERROR Run jdemoaur errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+wandb: ERROR     _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+wandb: ERROR     zip_file.write_record('data.pkl', data_value, len(data_value))
+wandb: ERROR RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+wandb: ERROR 
+wandb: ERROR During handling of the above exception, another exception occurred:
+wandb: ERROR 
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+wandb: ERROR     _train_every_frame(model, optimizer, criterion,
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+wandb: ERROR     save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+wandb: ERROR     torch.save(checkpoint, path)
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+wandb: ERROR     with _open_zipfile_writer(f) as opened_zipfile:
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+wandb: ERROR     self.file_like.write_end_of_file()
+wandb: ERROR RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+wandb: ERROR 
+wandb: Agent Starting Run: tbootyzp with config:
+wandb: 	batch_size: 32
+wandb: 	epochs: 10
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.01
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_163746-tbootyzp
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run restful-sweep-28
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_initial_resnet
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_initial_resnet/sweeps/yzqnynnm
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_initial_resnet/runs/tbootyzp
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/10 [00:00<?, ?epoch/s]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 10%|█         | 1/10 [00:58<08:46, 58.53s/epoch]
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+    zip_file.write_record('data.pkl', data_value, len(data_value))
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+    save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+    torch.save(checkpoint, path)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁█
+wandb:        test_acc ▁█
+wandb:         test_f1 ▁█
+wandb:  test_precision ▁█
+wandb:     test_recall ▁█
+wandb:       train_acc ▁█
+wandb:      train_loss █▁
+wandb:          val_f1 ▁█
+wandb:   val_precision ▁█
+wandb:      val_recall ▁█
+wandb:  validation_acc ▁█
+wandb: validation_loss █▁
+wandb: 
+wandb: Run summary:
+wandb:           epoch 1
+wandb:          run_id tbootyzp
+wandb:        test_acc 0.2575
+wandb:         test_f1 0.18826
+wandb:  test_precision 0.194
+wandb:     test_recall 0.2575
+wandb:       train_acc 0.179
+wandb:      train_loss 2.22653
+wandb:          val_f1 0.18849
+wandb:   val_precision 0.31055
+wandb:      val_recall 0.2425
+wandb:  validation_acc 0.2425
+wandb: validation_loss 2.24249
+wandb: 
+wandb: 🚀 View run restful-sweep-28 at: https://wandb.ai/idlcv/Video_initial_resnet/runs/tbootyzp
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_initial_resnet
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20241123_163746-tbootyzp/logs
+Run tbootyzp errored:
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+    zip_file.write_record('data.pkl', data_value, len(data_value))
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+    save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+    torch.save(checkpoint, path)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+
+wandb: ERROR Run tbootyzp errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+wandb: ERROR     _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+wandb: ERROR     zip_file.write_record('data.pkl', data_value, len(data_value))
+wandb: ERROR RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+wandb: ERROR 
+wandb: ERROR During handling of the above exception, another exception occurred:
+wandb: ERROR 
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+wandb: ERROR     _train_every_frame(model, optimizer, criterion,
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+wandb: ERROR     save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+wandb: ERROR     torch.save(checkpoint, path)
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+wandb: ERROR     with _open_zipfile_writer(f) as opened_zipfile:
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+wandb: ERROR     self.file_like.write_end_of_file()
+wandb: ERROR RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+wandb: ERROR 
+wandb: Agent Starting Run: rgh39uah with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 10
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.001
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_163849-rgh39uah
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run wandering-sweep-29
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_initial_resnet
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_initial_resnet/sweeps/yzqnynnm
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_initial_resnet/runs/rgh39uah
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/10 [00:00<?, ?epoch/s] 10%|█         | 1/10 [01:02<09:18, 62.04s/epoch] 10%|█         | 1/10 [01:02<09:18, 62.04s/epoch]Exception ignored in: <generator object tqdm.__iter__ at 0x7f3852a643c0>
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 1196, in __iter__
+    self.close()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 1302, in close
+    self.display(pos=0)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 1495, in display
+    self.sp(self.__str__() if msg is None else msg)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 459, in print_status
+    fp_write('\r' + s + (' ' * max(last_len[0] - len_s, 0)))
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 452, in fp_write
+    fp.write(str(s))
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/utils.py", line 196, in inner
+    return func(*args, **kwargs)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 645, in write
+    self._old_write(data)
+OSError: [Errno 28] No space left on device
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+    zip_file.write_record('data.pkl', data_value, len(data_value))
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+    save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+    torch.save(checkpoint, path)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁█
+wandb:        test_acc █▁
+wandb:         test_f1 █▁
+wandb:  test_precision ▁█
+wandb:     test_recall █▁
+wandb:       train_acc ▁█
+wandb:      train_loss █▁
+wandb:          val_f1 █▁
+wandb:   val_precision █▁
+wandb:      val_recall █▁
+wandb:  validation_acc █▁
+wandb: validation_loss ▁█
+wandb: 
+wandb: Run summary:
+wandb:           epoch 1
+wandb:          run_id rgh39uah
+wandb:        test_acc 0.56333
+wandb:         test_f1 0.56269
+wandb:  test_precision 0.81472
+wandb:     test_recall 0.56333
+wandb:       train_acc 0.8372
+wandb:      train_loss 0.51837
+wandb:          val_f1 0.53154
+wandb:   val_precision 0.6863
+wandb:      val_recall 0.545
+wandb:  validation_acc 0.545
+wandb: validation_loss 1.74443
+wandb: 
+wandb: 🚀 View run wandering-sweep-29 at: https://wandb.ai/idlcv/Video_initial_resnet/runs/rgh39uah
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_initial_resnet
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20241123_163849-rgh39uah/logs
+Run rgh39uah errored:
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+    zip_file.write_record('data.pkl', data_value, len(data_value))
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+    save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+    torch.save(checkpoint, path)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+
+wandb: ERROR Run rgh39uah errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+wandb: ERROR     _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+wandb: ERROR     zip_file.write_record('data.pkl', data_value, len(data_value))
+wandb: ERROR RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+wandb: ERROR 
+wandb: ERROR During handling of the above exception, another exception occurred:
+wandb: ERROR 
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+wandb: ERROR     _train_every_frame(model, optimizer, criterion,
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+wandb: ERROR     save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+wandb: ERROR     torch.save(checkpoint, path)
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+wandb: ERROR     with _open_zipfile_writer(f) as opened_zipfile:
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+wandb: ERROR     self.file_like.write_end_of_file()
+wandb: ERROR RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+wandb: ERROR 
+wandb: Agent Starting Run: kj3hggev with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 10
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.001
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_163956-kj3hggev
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run exalted-sweep-30
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_initial_resnet
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_initial_resnet/sweeps/yzqnynnm
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_initial_resnet/runs/kj3hggev
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/10 [00:00<?, ?epoch/s] 10%|█         | 1/10 [01:01<09:13, 61.50s/epoch] 10%|█         | 1/10 [01:01<09:13, 61.50s/epoch]Exception ignored in: <generator object tqdm.__iter__ at 0x7f3852893530>
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 1196, in __iter__
+    self.close()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 1302, in close
+    self.display(pos=0)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 1495, in display
+    self.sp(self.__str__() if msg is None else msg)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 459, in print_status
+    fp_write('\r' + s + (' ' * max(last_len[0] - len_s, 0)))
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 452, in fp_write
+    fp.write(str(s))
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/utils.py", line 196, in inner
+    return func(*args, **kwargs)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 645, in write
+    self._old_write(data)
+OSError: [Errno 28] No space left on device
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+    zip_file.write_record('data.pkl', data_value, len(data_value))
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+    save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+    torch.save(checkpoint, path)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁█
+wandb:        test_acc ▁█
+wandb:         test_f1 ▁█
+wandb:  test_precision ▁█
+wandb:     test_recall ▁█
+wandb:       train_acc ▁█
+wandb:      train_loss █▁
+wandb:          val_f1 ▁█
+wandb:   val_precision ▁█
+wandb:      val_recall ▁█
+wandb:  validation_acc ▁█
+wandb: validation_loss █▁
+wandb: 
+wandb: Run summary:
+wandb:           epoch 1
+wandb:          run_id kj3hggev
+wandb:        test_acc 0.75667
+wandb:         test_f1 0.7563
+wandb:  test_precision 0.80543
+wandb:     test_recall 0.75667
+wandb:       train_acc 0.81
+wandb:      train_loss 0.59116
+wandb:          val_f1 0.77675
+wandb:   val_precision 0.81796
+wandb:      val_recall 0.77833
+wandb:  validation_acc 0.77833
+wandb: validation_loss 0.70177
+wandb: 
+wandb: 🚀 View run exalted-sweep-30 at: https://wandb.ai/idlcv/Video_initial_resnet/runs/kj3hggev
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_initial_resnet
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20241123_163956-kj3hggev/logs
+Run kj3hggev errored:
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+    zip_file.write_record('data.pkl', data_value, len(data_value))
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+    save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+    torch.save(checkpoint, path)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+
+wandb: ERROR Run kj3hggev errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+wandb: ERROR     _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+wandb: ERROR     zip_file.write_record('data.pkl', data_value, len(data_value))
+wandb: ERROR RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+wandb: ERROR 
+wandb: ERROR During handling of the above exception, another exception occurred:
+wandb: ERROR 
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+wandb: ERROR     _train_every_frame(model, optimizer, criterion,
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+wandb: ERROR     save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+wandb: ERROR     torch.save(checkpoint, path)
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+wandb: ERROR     with _open_zipfile_writer(f) as opened_zipfile:
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+wandb: ERROR     self.file_like.write_end_of_file()
+wandb: ERROR RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+wandb: ERROR 
+wandb: Agent Starting Run: l2khcuf9 with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 10
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.001
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164104-l2khcuf9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run clear-sweep-31
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_initial_resnet
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_initial_resnet/sweeps/yzqnynnm
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_initial_resnet/runs/l2khcuf9
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/10 [00:00<?, ?epoch/s] 10%|█         | 1/10 [01:10<10:36, 70.76s/epoch] 10%|█         | 1/10 [01:10<10:36, 70.76s/epoch]Exception ignored in: <generator object tqdm.__iter__ at 0x7f38526ba7a0>
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 1196, in __iter__
+    self.close()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 1302, in close
+    self.display(pos=0)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 1495, in display
+    self.sp(self.__str__() if msg is None else msg)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 459, in print_status
+    fp_write('\r' + s + (' ' * max(last_len[0] - len_s, 0)))
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/std.py", line 452, in fp_write
+    fp.write(str(s))
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/tqdm/utils.py", line 196, in inner
+    return func(*args, **kwargs)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 645, in write
+    self._old_write(data)
+OSError: [Errno 28] No space left on device
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+    zip_file.write_record('data.pkl', data_value, len(data_value))
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+    save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+    torch.save(checkpoint, path)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁█
+wandb:        test_acc ▁█
+wandb:         test_f1 ▁█
+wandb:  test_precision ▁█
+wandb:     test_recall ▁█
+wandb:       train_acc ▁█
+wandb:      train_loss █▁
+wandb:          val_f1 ▁█
+wandb:   val_precision ▁█
+wandb:      val_recall ▁█
+wandb:  validation_acc ▁█
+wandb: validation_loss █▁
+wandb: 
+wandb: Run summary:
+wandb:           epoch 1
+wandb:          run_id l2khcuf9
+wandb:        test_acc 0.775
+wandb:         test_f1 0.76555
+wandb:  test_precision 0.81417
+wandb:     test_recall 0.775
+wandb:       train_acc 0.629
+wandb:      train_loss 1.13902
+wandb:          val_f1 0.63067
+wandb:   val_precision 0.70609
+wandb:      val_recall 0.64417
+wandb:  validation_acc 0.64417
+wandb: validation_loss 1.18167
+wandb: 
+wandb: 🚀 View run clear-sweep-31 at: https://wandb.ai/idlcv/Video_initial_resnet/runs/l2khcuf9
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_initial_resnet
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20241123_164104-l2khcuf9/logs
+Run l2khcuf9 errored:
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+    zip_file.write_record('data.pkl', data_value, len(data_value))
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+    save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+    torch.save(checkpoint, path)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+
+wandb: ERROR Run l2khcuf9 errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 652, in save
+wandb: ERROR     _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 866, in _save
+wandb: ERROR     zip_file.write_record('data.pkl', data_value, len(data_value))
+wandb: ERROR RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data.pkl: file write failed
+wandb: ERROR 
+wandb: ERROR During handling of the above exception, another exception occurred:
+wandb: ERROR 
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 98, in run_wandb
+wandb: ERROR     _train_every_frame(model, optimizer, criterion,
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 157, in _train_every_frame
+wandb: ERROR     save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/models.py", line 68, in save_checkpoint
+wandb: ERROR     torch.save(checkpoint, path)
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 651, in save
+wandb: ERROR     with _open_zipfile_writer(f) as opened_zipfile:
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/serialization.py", line 499, in __exit__
+wandb: ERROR     self.file_like.write_end_of_file()
+wandb: ERROR RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 64 vs 0
+wandb: ERROR 
+wandb: Agent Starting Run: hh8wjlpg with config:
+wandb: 	batch_size: 32
+wandb: 	epochs: 10
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.001
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run swift-sweep-32
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_initial_resnet
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_initial_resnet/sweeps/yzqnynnm
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_initial_resnet/runs/hh8wjlpg
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/10 [00:00<?, ?epoch/s] 10%|█         | 1/10 [00:35<05:21, 35.73s/epoch] 20%|██        | 2/10 [01:06<04:21, 32.70s/epoch] 30%|███       | 3/10 [01:36<03:39, 31.39s/epoch] 40%|████      | 4/10 [02:09<03:12, 32.13s/epoch] 50%|█████     | 5/10 [02:43<02:44, 32.81s/epoch] 60%|██████    | 6/10 [03:16<02:10, 32.74s/epoch] 70%|███████   | 7/10 [03:51<01:40, 33.58s/epoch] 80%|████████  | 8/10 [04:25<01:07, 33.73s/epoch] 90%|█████████ | 9/10 [04:57<00:33, 33.10s/epoch]100%|██████████| 10/10 [05:30<00:00, 33.04s/epoch]100%|██████████| 10/10 [05:30<00:00, 33.00s/epoch]
+--- Logging error ---
+Traceback (most recent call last):
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+OSError: [Errno 116] Stale file handle
+Call stack:
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 70, in run_wandb
+    with wandb.init(config=config):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3681, in __exit__
+    self._finish(exit_code=exit_code)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2158, in _finish
+    logger.info(f"finishing run {self._get_path()}")
+Message: 'finishing run idlcv/Video_initial_resnet/hh8wjlpg'
+Arguments: ()
+--- Logging error ---
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py:2386: UserWarning: Run (hh8wjlpg) is finished. The call to `_console_raw_callback` will be ignored. Please make sure that you are using an active run.
+  lambda data: self._console_raw_callback("stderr", data),
+Traceback (most recent call last):
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+OSError: [Errno 116] Stale file handle
+Call stack:
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 70, in run_wandb
+    with wandb.init(config=config):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3681, in __exit__
+    self._finish(exit_code=exit_code)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2185, in _finish
+    self._atexit_cleanup(exit_code=exit_code)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2426, in _atexit_cleanup
+    logger.info(f"got exitcode: {exit_code}")
+Message: 'got exitcode: 0'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+OSError: [Errno 116] Stale file handle
+Call stack:
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 70, in run_wandb
+    with wandb.init(config=config):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3681, in __exit__
+    self._finish(exit_code=exit_code)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2185, in _finish
+    self._atexit_cleanup(exit_code=exit_code)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2438, in _atexit_cleanup
+    self._on_finish()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2676, in _on_finish
+    self._console_stop()  # TODO: there's a race here with jupyter console logging
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2475, in _console_stop
+    self._restore()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2408, in _restore
+    logger.info("restore")
+Message: 'restore'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+OSError: [Errno 116] Stale file handle
+Call stack:
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 70, in run_wandb
+    with wandb.init(config=config):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3681, in __exit__
+    self._finish(exit_code=exit_code)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2185, in _finish
+    self._atexit_cleanup(exit_code=exit_code)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2438, in _atexit_cleanup
+    self._on_finish()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2676, in _on_finish
+    self._console_stop()  # TODO: there's a race here with jupyter console logging
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2475, in _console_stop
+    self._restore()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2414, in _restore
+    logger.info("restore done")
+Message: 'restore done'
+Arguments: ()
+wandb:                                                                                
+--- Logging error ---
+Traceback (most recent call last):
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+OSError: [Errno 116] Stale file handle
+Call stack:
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 70, in run_wandb
+    with wandb.init(config=config):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3681, in __exit__
+    self._finish(exit_code=exit_code)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2185, in _finish
+    self._atexit_cleanup(exit_code=exit_code)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2451, in _atexit_cleanup
+    Run._footer(
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3873, in _footer
+    Run._footer_history_summary_info(
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3975, in _footer_history_summary_info
+    logger.info("rendering history")
+Message: 'rendering history'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+OSError: [Errno 116] Stale file handle
+Call stack:
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 70, in run_wandb
+    with wandb.init(config=config):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3681, in __exit__
+    self._finish(exit_code=exit_code)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2185, in _finish
+    self._atexit_cleanup(exit_code=exit_code)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2451, in _atexit_cleanup
+    Run._footer(
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3873, in _footer
+    Run._footer_history_summary_info(
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 4007, in _footer_history_summary_info
+    logger.info("rendering summary")
+Message: 'rendering summary'
+Arguments: ()
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁▂▃▃▄▅▆▆▇█
+wandb:        test_acc ▁▄▆▆█▇▆▇█▇
+wandb:         test_f1 ▁▄▆▆█▇▆▇█▇
+wandb:  test_precision ▁▅▆▆█▆▆▇▇▇
+wandb:     test_recall ▁▄▆▆█▇▆▇█▇
+wandb:       train_acc ▁▅▆▇▇███▇█
+wandb:      train_loss █▄▃▃▂▂▁▂▂▁
+wandb:          val_f1 ▁▂▅▆▇▆▆▇██
+wandb:   val_precision ▁▃▅▆▇▇▆▇██
+wandb:      val_recall ▁▂▅▆▇▆▆▇▇█
+wandb:  validation_acc ▁▂▅▆▇▆▆▇▇█
+wandb: validation_loss █▆▃▂▂▃▄▂▁▁
+wandb: 
+wandb: Run summary:
+wandb:           epoch 9
+wandb:          run_id hh8wjlpg
+wandb:        test_acc 0.8725
+wandb:         test_f1 0.87262
+wandb:  test_precision 0.88337
+wandb:     test_recall 0.8725
+wandb:       train_acc 0.9166
+wandb:      train_loss 0.25026
+wandb:          val_f1 0.91762
+wandb:   val_precision 0.92387
+wandb:      val_recall 0.91917
+wandb:  validation_acc 0.91917
+wandb: validation_loss 0.4269
+wandb: 
+--- Logging error ---
+Traceback (most recent call last):
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+OSError: [Errno 116] Stale file handle
+Call stack:
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/appl9/python/3.10.13/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 70, in run_wandb
+    with wandb.init(config=config):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3681, in __exit__
+    self._finish(exit_code=exit_code)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2185, in _finish
+    self._atexit_cleanup(exit_code=exit_code)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2451, in _atexit_cleanup
+    Run._footer(
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3881, in _footer
+    Run._footer_sync_info(
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3934, in _footer_sync_info
+    logger.info("logging synced files")
+Message: 'logging synced files'
+Arguments: ()
+wandb: 🚀 View run swift-sweep-32 at: https://wandb.ai/idlcv/Video_initial_resnet/runs/hh8wjlpg
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_initial_resnet
+wandb: Synced 2 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20241123_164222-hh8wjlpg/logs
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/every_frame_classification.py", line 112, in <module>
+    wandb.agent(sweep_id, run_wandb)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return pyagent(sweep_id, function, entity, project, count)
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 356, in pyagent
+    agent.run()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 334, in run
+    self._run_jobs_from_queue()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 281, in _run_jobs_from_queue
+    raise e
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 234, in _run_jobs_from_queue
+    logger.error(f"Run {run_id} errored:\n{exc_repr}")
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1216, in emit
+    self.stream = self._open()
+  File "/appl9/python/3.10.13/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_164222-hh8wjlpg/logs/debug.log'

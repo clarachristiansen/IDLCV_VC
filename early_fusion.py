@@ -36,7 +36,7 @@ parameters_dict = {
     #     'values' : [0.2, 0.5]
     # },
     'epochs' : {
-        'value': 10 ### change for true training
+        'value': 100 ### change for true training
     },
     'learning_rate' : {
         "values": [0.001, 0.01]
@@ -60,8 +60,7 @@ sweep_config['parameters'] = parameters_dict
 sweep_id = wandb.sweep(sweep_config, project='Video_early_initial')
 
 import torch
-
-
+from matplotlib import pyplot as plt
 
 criterion = nn.CrossEntropyLoss()
 
@@ -73,30 +72,29 @@ def run_wandb(config=None):
         config.run_id = run_id
         wandb.run.name = f"Run {run_id}"
         
-        data_transforms = get_transforms(rotation_degree = 30, transform_size = config.image_size)
+        data_transforms = get_transforms(rotation_degree = 30, transform_size = config.image_size, video_consistency= True)
 
         ''' Load data '''  
-        framevideostack_dataset_train = FrameVideoDataset(root_dir=root_dir, split='train', transform=data_transforms['train'],stack_frames = False)
-        framevideostack_dataset_val = FrameVideoDataset(root_dir=root_dir, split='val', transform=data_transforms['val'], stack_frames = false)
-        framevideostack_dataset_test = FrameVideoDataset(root_dir=root_dir, split='test', transform=data_transforms['test'], stack_frames = False)
+        framevideostack_dataset_train = FrameVideoDataset(root_dir=root_dir, split='train', transform=data_transforms['train'],stack_frames = True, clara_insisted=True)
+        framevideostack_dataset_val = FrameVideoDataset(root_dir=root_dir, split='val', transform=data_transforms['val'], stack_frames = True, clara_insisted=True)
+        framevideostack_dataset_test = FrameVideoDataset(root_dir=root_dir, split='test', transform=data_transforms['test'], stack_frames = True, clara_insisted=True)
 
         framevideostack_loader_train = DataLoader(framevideostack_dataset_train,  batch_size=config.batch_size, shuffle=True)
         framevideostack_loader_val = DataLoader(framevideostack_dataset_val,  batch_size=1, shuffle=False)
         framevideostack_loader_test = DataLoader(framevideostack_dataset_test,  batch_size=1, shuffle=False)
         
-        
 
-        if config.network == "resnet18":
-            model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True)
-            num_classes = 10  # Your custom number of output classes
-            model.fc = nn.Linear(model.fc.in_features, num_classes)
-        elif config.network == "base_network":
-            model = Base_Network(config.dropout, config.num_layers, num_classes=10) 
-        model.to(device)
+
+        # if config.network == "resnet18":
+        model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True)
+
+        model.conv1 = nn.Conv2d(in_channels=30, out_channels=64, kernel_size=(7,7), padding=(3,3), stride=(2,2), bias=False)
+        model.fc = nn.Linear(model.fc.in_features, 10)
+
 
         optimizer = build_optimizer(model, config.learning_rate)
 
-        # Generate a random id for this run and this model
+        # # Generate a random id for this run and this model
         _train_every_frame(model, optimizer, criterion, 
                             framevideostack_loader_train,
                             framevideostack_loader_val,

@@ -62,7 +62,8 @@ class FrameVideoDataset(torch.utils.data.Dataset):
     root_dir = '/work3/ppar/data/ucf101', 
     split = 'train', 
     transform = None,
-    stack_frames = True
+    stack_frames = True,
+    clara_insisted = False
 ):
 
         self.video_paths = sorted(glob(f'{root_dir}/videos/{split}/*/*.avi'))
@@ -70,6 +71,7 @@ class FrameVideoDataset(torch.utils.data.Dataset):
         self.split = split
         self.transform = transform
         self.stack_frames = stack_frames
+        self.clara_insisted = clara_insisted
         
         self.n_sampled_frames = 10
 
@@ -95,7 +97,9 @@ class FrameVideoDataset(torch.utils.data.Dataset):
         
         if self.stack_frames:
             frames = torch.stack(frames).permute(1, 0, 2, 3)
-
+        
+        if self.clara_insisted:
+            frames = frames.reshape([30,224,224])
 
         return frames, label
     
@@ -108,19 +112,29 @@ class FrameVideoDataset(torch.utils.data.Dataset):
 
         return frames
 
-def get_transforms(rotation_degree = 30, transform_size = 128 ):
+def get_transforms(rotation_degree = 30, transform_size = 128, video_consistency = False ):
 
     normalize_array= ([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
-    data_transforms = {
-    'train': T.Compose([
+
+    video_transbasic_trans = T.Compose([
+        T.Resize(transform_size),
+        T.CenterCrop(transform_size),
+        T.ColorJitter(),
+        T.ToTensor(),
+        T.Normalize(normalize_array[0], normalize_array[1])
+    ])
+    basic_trans = T.Compose([
         T.RandomRotation(rotation_degree),
         T.RandomResizedCrop(transform_size),
         T.RandomHorizontalFlip(),
         T.ColorJitter(),
         T.ToTensor(),
-        T.Normalize(normalize_array[0], normalize_array[1]) 
-        
-    ]),    
+        T.Normalize(normalize_array[0], normalize_array[1])
+    ])
+
+
+    data_transforms = {
+    'train':[basic_trans if not video_consistency else video_transbasic_trans][0],    
     'val': T.Compose([
         T.Resize(transform_size),
         T.CenterCrop(transform_size),
@@ -143,13 +157,9 @@ if __name__ == '__main__':
     root_dir = './data/ufc10/'
 
     transform = T.Compose([T.Resize((64, 64)),T.ToTensor()])
-    print('loading validation split .')
     frameimage_dataset = FrameImageDataset(root_dir=root_dir, split='val', transform=transform)
-    print('loading validation split ..')
     framevideostack_dataset = FrameVideoDataset(root_dir=root_dir, split='val', transform=transform, stack_frames = True)
-    print('loading validation split ...')
     framevideolist_dataset = FrameVideoDataset(root_dir=root_dir, split='val', transform=transform, stack_frames = False)
-    print('loading done')
     
     # frameimage_loader = DataLoader(frameimage_dataset,  batch_size=8, shuffle=False)
     framevideostack_loader = DataLoader(framevideostack_dataset,  batch_size=8, shuffle=False)
