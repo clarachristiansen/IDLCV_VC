@@ -12895,4 +12895,190 @@ Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
   warnings.warn(
 /zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
   warnings.warn(msg)
-  0%|          | 0/10 [00:00<?, ?epoch/s] 10%|█         | 1/10 [00:29<04:29, 29.94s/epoch] 20%|██        | 2/10 [00:59<03:59, 29.93s/epoch] 30%|███       | 3/10 [01:30<03:30, 30.03s/epoch] 40%|████      | 4/10 [01:59<02:59, 29.93s/epoch] 50%|█████     | 5/10 [02:30<02:31, 30.27s/epoch] 60%|██████    | 6/10 [03:02<02:02, 30.74s/epoch]
+  0%|          | 0/10 [00:00<?, ?epoch/s] 10%|█         | 1/10 [00:29<04:29, 29.94s/epoch] 20%|██        | 2/10 [00:59<03:59, 29.93s/epoch] 30%|███       | 3/10 [01:30<03:30, 30.03s/epoch] 40%|████      | 4/10 [01:59<02:59, 29.93s/epoch] 50%|█████     | 5/10 [02:30<02:31, 30.27s/epoch] 60%|██████    | 6/10 [03:02<02:02, 30.74s/epoch] 70%|███████   | 7/10 [03:34<01:33, 31.16s/epoch] 80%|████████  | 8/10 [04:07<01:03, 31.81s/epoch] 90%|█████████ | 9/10 [04:38<00:31, 31.45s/epoch]100%|██████████| 10/10 [05:08<00:00, 31.20s/epoch]100%|██████████| 10/10 [05:08<00:00, 30.88s/epoch]
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁▂▃▃▄▅▆▆▇█
+wandb:        test_acc ▁▅▇▃▇▅▆▅█▇
+wandb:         test_f1 ▁▅▇▃▇▅▆▅█▇
+wandb:  test_precision ▁▅▇▅▇▅▆▄█▇
+wandb:     test_recall ▁▅▇▃▇▅▆▅█▇
+wandb:       train_acc ▁▅▆▇▆▇█▇██
+wandb:      train_loss █▄▃▂▃▂▁▂▁▁
+wandb:          val_f1 ▁▄▇▄▇▆▇▆██
+wandb:   val_precision ▁▂▇▅▆▅▇▅██
+wandb:      val_recall ▁▃▇▄▇▅▇▅██
+wandb:  validation_acc ▁▃▇▄▇▅▇▅██
+wandb: validation_loss █▆▂▇▂▅▂▅▁▂
+wandb: 
+wandb: Run summary:
+wandb:           epoch 9
+wandb:          run_id jwn50nuu
+wandb:        test_acc 0.88
+wandb:         test_f1 0.88329
+wandb:  test_precision 0.89564
+wandb:     test_recall 0.88
+wandb:       train_acc 0.9324
+wandb:      train_loss 0.20656
+wandb:          val_f1 0.91272
+wandb:   val_precision 0.92445
+wandb:      val_recall 0.9125
+wandb:  validation_acc 0.9125
+wandb: validation_loss 0.34628
+wandb: 
+wandb: 🚀 View run firm-sweep-21 at: https://wandb.ai/idlcv/Video_initial_resnet/runs/jwn50nuu
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_initial_resnet
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20241123_160558-jwn50nuu/logs
+wandb: Agent Starting Run: zmh9d6ae with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 10
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.001
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_161115-zmh9d6ae
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lucky-sweep-22
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_initial_resnet
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_initial_resnet/sweeps/yzqnynnm
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_initial_resnet/runs/zmh9d6ae
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/10 [00:00<?, ?epoch/s] 10%|█         | 1/10 [00:38<05:45, 38.37s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 20%|██        | 2/10 [01:14<04:56, 37.04s/epoch] 30%|███       | 3/10 [01:48<04:11, 35.86s/epoch] 40%|████      | 4/10 [02:25<03:35, 35.96s/epoch] 50%|█████     | 5/10 [03:06<03:08, 37.76s/epoch] 60%|██████    | 6/10 [03:45<02:33, 38.35s/epoch] 70%|███████   | 7/10 [04:18<01:49, 36.56s/epoch] 80%|████████  | 8/10 [05:11<01:23, 41.91s/epoch] 90%|█████████ | 9/10 [06:05<00:45, 45.58s/epoch]100%|██████████| 10/10 [06:59<00:00, 48.08s/epoch]100%|██████████| 10/10 [06:59<00:00, 41.91s/epoch]
+wandb: - 0.008 MB of 0.008 MB uploadedwandb: \ 0.008 MB of 0.008 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁▂▃▃▄▅▆▆▇█
+wandb:        test_acc ▁▂▅▅▇▆▇█▆█
+wandb:         test_f1 ▁▂▅▅▇▆▇█▆█
+wandb:  test_precision ▁▂▅▆▇▇▇█▇█
+wandb:     test_recall ▁▂▅▅▇▆▇█▆█
+wandb:       train_acc ▁▃▄▅▆▇▇███
+wandb:      train_loss █▆▅▄▃▂▂▁▁▁
+wandb:          val_f1 ▁▁▄▅▆▅▆▇▆█
+wandb:   val_precision ▁▂▅▅▆▆▇█▇█
+wandb:      val_recall ▁▁▄▅▆▅▆▇▆█
+wandb:  validation_acc ▁▁▄▅▆▅▆▇▆█
+wandb: validation_loss █▇▄▄▃▄▂▂▄▁
+wandb: 
+wandb: Run summary:
+wandb:           epoch 9
+wandb:          run_id zmh9d6ae
+wandb:        test_acc 0.85417
+wandb:         test_f1 0.84487
+wandb:  test_precision 0.8578
+wandb:     test_recall 0.85417
+wandb:       train_acc 0.7934
+wandb:      train_loss 0.62062
+wandb:          val_f1 0.87017
+wandb:   val_precision 0.8794
+wandb:      val_recall 0.87083
+wandb:  validation_acc 0.87083
+wandb: validation_loss 0.52643
+wandb: 
+wandb: 🚀 View run lucky-sweep-22 at: https://wandb.ai/idlcv/Video_initial_resnet/runs/zmh9d6ae
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_initial_resnet
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20241123_161115-zmh9d6ae/logs
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: wi1hi4el with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 10
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.01
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_161835-wi1hi4el
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run treasured-sweep-23
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_initial_resnet
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_initial_resnet/sweeps/yzqnynnm
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_initial_resnet/runs/wi1hi4el
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/10 [00:00<?, ?epoch/s]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 10%|█         | 1/10 [00:36<05:26, 36.29s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 20%|██        | 2/10 [01:06<04:22, 32.87s/epoch] 30%|███       | 3/10 [01:38<03:47, 32.54s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 40%|████      | 4/10 [02:10<03:12, 32.10s/epoch] 50%|█████     | 5/10 [02:46<02:47, 33.46s/epoch] 60%|██████    | 6/10 [03:20<02:14, 33.70s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 70%|███████   | 7/10 [03:50<01:37, 32.44s/epoch] 80%|████████  | 8/10 [04:19<01:03, 31.57s/epoch] 90%|█████████ | 9/10 [04:49<00:31, 31.01s/epoch]100%|██████████| 10/10 [05:19<00:00, 30.72s/epoch]100%|██████████| 10/10 [05:19<00:00, 31.98s/epoch]
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁▂▃▃▄▅▆▆▇█
+wandb:        test_acc ▁▃▂▃▄▆▄▅▇█
+wandb:         test_f1 ▁▂▂▃▄▆▃▅▇█
+wandb:  test_precision ▁▃▃▃▅▅▄▆▇█
+wandb:     test_recall ▁▃▂▃▄▆▄▅▇█
+wandb:       train_acc ▁▁▃▃▄▅▆▆▇█
+wandb:      train_loss █▆▅▄▄▃▃▂▂▁
+wandb:          val_f1 ▁▂▃▄▅▅▃▆▆█
+wandb:   val_precision ▁▃▃▄▅▅▄▇▇█
+wandb:      val_recall ▁▂▃▄▅▅▄▆▆█
+wandb:  validation_acc ▁▂▃▄▅▅▄▆▆█
+wandb: validation_loss ▃▇▄▂▂▂▄█▃▁
+wandb: 
+wandb: Run summary:
+wandb:           epoch 9
+wandb:          run_id wi1hi4el
+wandb:        test_acc 0.48583
+wandb:         test_f1 0.48751
+wandb:  test_precision 0.5607
+wandb:     test_recall 0.48583
+wandb:       train_acc 0.464
+wandb:      train_loss 1.53661
+wandb:          val_f1 0.38679
+wandb:   val_precision 0.46774
+wandb:      val_recall 0.395
+wandb:  validation_acc 0.395
+wandb: validation_loss 1.83501
+wandb: 
+wandb: 🚀 View run treasured-sweep-23 at: https://wandb.ai/idlcv/Video_initial_resnet/runs/wi1hi4el
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_initial_resnet
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20241123_161835-wi1hi4el/logs
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: 65uxqpef with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 10
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.01
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_162411-65uxqpef
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run classic-sweep-24
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_initial_resnet
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_initial_resnet/sweeps/yzqnynnm
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_initial_resnet/runs/65uxqpef
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/10 [00:00<?, ?epoch/s]

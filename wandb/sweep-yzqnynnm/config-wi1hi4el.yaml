@@ -1,0 +1,12 @@
+wandb_version: 1
+
+batch_size:
+  value: 64
+epochs:
+  value: 10
+image_size:
+  value: 224
+learning_rate:
+  value: 0.01
+network:
+  value: resnet18
