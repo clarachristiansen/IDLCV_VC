@@ -87,10 +87,10 @@ def run_wandb(config=None):
 
         # if config.network == "resnet18":
         model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True)
-
+        
         model.conv1 = nn.Conv2d(in_channels=30, out_channels=64, kernel_size=(7,7), padding=(3,3), stride=(2,2), bias=False)
         model.fc = nn.Linear(model.fc.in_features, 10)
-
+        model.to(device)
 
         optimizer = build_optimizer(model, config.learning_rate)
 

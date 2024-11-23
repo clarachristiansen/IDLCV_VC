@@ -1,126 +1,50 @@
 wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: s164248 (idlcv). Use `wandb login --relogin` to force relogin
 wandb: Appending key for api.wandb.ai to your netrc file: /zhome/88/7/117159/.netrc
-wandb: Agent Starting Run: y33kxmsa with config:
-wandb: 	batch_size: 32
-wandb: 	epochs: 100
-wandb: 	image_size: 224
-wandb: 	learning_rate: 0.001
-wandb: 	network: resnet18
-wandb: Tracking run with wandb version 0.18.5
-wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_180314-y33kxmsa
-wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run earthy-sweep-1
-wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_early_initial
-wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_early_initial/sweeps/0rg9jjzy
-wandb: 🚀 View run at https://wandb.ai/idlcv/Video_early_initial/runs/y33kxmsa
-Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
-/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
-  warnings.warn(
-/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
-  warnings.warn(msg)
-  0%|          | 0/100 [00:00<?, ?epoch/s]  0%|          | 0/100 [00:01<?, ?epoch/s]
-Traceback (most recent call last):
-  File "/zhome/88/7/117159/Courses/IDLCV_VC/early_fusion.py", line 98, in run_wandb
-    _train_every_frame(model, optimizer, criterion,
-  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 119, in _train_every_frame
-    train_loss, train_acc = train_one_epoch(model, optimizer, criterion, train_loader, device)
-  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 42, in train_one_epoch
-    output = model(data)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/resnet.py", line 285, in forward
-    return self._forward_impl(x)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/resnet.py", line 268, in _forward_impl
-    x = self.conv1(x)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 458, in forward
-    return self._conv_forward(input, self.weight, self.bias)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 454, in _conv_forward
-    return F.conv2d(input, weight, bias, self.stride,
-RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor) should be the same
-wandb:                                                                                
-wandb: 🚀 View run earthy-sweep-1 at: https://wandb.ai/idlcv/Video_early_initial/runs/y33kxmsa
-wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_early_initial
-wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
-wandb: Find logs at: ./wandb/run-20241123_180314-y33kxmsa/logs
-Run y33kxmsa errored:
-Traceback (most recent call last):
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
-    self._function()
-  File "/zhome/88/7/117159/Courses/IDLCV_VC/early_fusion.py", line 98, in run_wandb
-    _train_every_frame(model, optimizer, criterion,
-  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 119, in _train_every_frame
-    train_loss, train_acc = train_one_epoch(model, optimizer, criterion, train_loader, device)
-  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 42, in train_one_epoch
-    output = model(data)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/resnet.py", line 285, in forward
-    return self._forward_impl(x)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/resnet.py", line 268, in _forward_impl
-    x = self.conv1(x)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 458, in forward
-    return self._conv_forward(input, self.weight, self.bias)
-  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 454, in _conv_forward
-    return F.conv2d(input, weight, bias, self.stride,
-RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor) should be the same
-
-wandb: ERROR Run y33kxmsa errored:
-wandb: ERROR Traceback (most recent call last):
-wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
-wandb: ERROR     self._function()
-wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/early_fusion.py", line 98, in run_wandb
-wandb: ERROR     _train_every_frame(model, optimizer, criterion,
-wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 119, in _train_every_frame
-wandb: ERROR     train_loss, train_acc = train_one_epoch(model, optimizer, criterion, train_loader, device)
-wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 42, in train_one_epoch
-wandb: ERROR     output = model(data)
-wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
-wandb: ERROR     return self._call_impl(*args, **kwargs)
-wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
-wandb: ERROR     return forward_call(*args, **kwargs)
-wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/resnet.py", line 285, in forward
-wandb: ERROR     return self._forward_impl(x)
-wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/resnet.py", line 268, in _forward_impl
-wandb: ERROR     x = self.conv1(x)
-wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
-wandb: ERROR     return self._call_impl(*args, **kwargs)
-wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
-wandb: ERROR     return forward_call(*args, **kwargs)
-wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 458, in forward
-wandb: ERROR     return self._conv_forward(input, self.weight, self.bias)
-wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 454, in _conv_forward
-wandb: ERROR     return F.conv2d(input, weight, bias, self.stride,
-wandb: ERROR RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor) should be the same
-wandb: ERROR 
-wandb: Agent Starting Run: qynq0m0f with config:
+wandb: Agent Starting Run: op5fdg3c with config:
 wandb: 	batch_size: 64
 wandb: 	epochs: 100
 wandb: 	image_size: 224
-wandb: 	learning_rate: 0.001
+wandb: 	learning_rate: 0.01
 wandb: 	network: resnet18
 wandb: Tracking run with wandb version 0.18.5
-wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_180325-qynq0m0f
+wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_181224-op5fdg3c
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run pleasant-sweep-2
+wandb: Syncing run effortless-sweep-1
 wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_early_initial
-wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_early_initial/sweeps/0rg9jjzy
-wandb: 🚀 View run at https://wandb.ai/idlcv/Video_early_initial/runs/qynq0m0f
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_early_initial/sweeps/y6g8ztvv
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_early_initial/runs/op5fdg3c
 Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
 /zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
   warnings.warn(
 /zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
   warnings.warn(msg)
-  0%|          | 0/100 [00:00<?, ?epoch/s]
+  0%|          | 0/100 [00:00<?, ?epoch/s]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  1%|          | 1/100 [00:20<33:08, 20.09s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  2%|▏         | 2/100 [00:32<25:39, 15.71s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  3%|▎         | 3/100 [00:46<23:42, 14.66s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  4%|▍         | 4/100 [00:58<22:14, 13.90s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  5%|▌         | 5/100 [01:12<22:05, 13.95s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  6%|▌         | 6/100 [01:25<21:09, 13.50s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  7%|▋         | 7/100 [01:37<20:22, 13.15s/epoch]

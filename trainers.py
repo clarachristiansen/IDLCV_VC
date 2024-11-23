@@ -33,8 +33,6 @@ def train_one_epoch(model, optimizer, criterion, loader, device):
         # Move data and target to the specified device
         # data, target = data.to(device), target.to(device).float().unsqueeze(1)
         data, target = data.to(device), target.to(device).long()  # Target should be long for CrossEntropyLoss
-
-
         # Zero gradients
         optimizer.zero_grad()
 
