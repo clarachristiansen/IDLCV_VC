@@ -69,24 +69,21 @@ def run_wandb(config=None):
         data_transforms = get_transforms(rotation_degree = 30, transform_size = config.image_size, video_consistency= True)
 
         ''' Load data '''  
-        framevideostack_dataset_train = FrameVideoDataset(root_dir=root_dir, split='train', transform=data_transforms['train'],stack_frames = True, clara_insisted=True)
-        framevideostack_dataset_val = FrameVideoDataset(root_dir=root_dir, split='val', transform=data_transforms['val'], stack_frames = True, clara_insisted=True)
-        framevideostack_dataset_test = FrameVideoDataset(root_dir=root_dir, split='test', transform=data_transforms['test'], stack_frames = True, clara_insisted=True)
+        framevideostack_dataset_train = FrameVideoDataset(root_dir=root_dir, split='train', transform=data_transforms['train'],stack_frames = True, clara_insisted=False)
+        framevideostack_dataset_val = FrameVideoDataset(root_dir=root_dir, split='val', transform=data_transforms['val'], stack_frames = True, clara_insisted=False)
+        framevideostack_dataset_test = FrameVideoDataset(root_dir=root_dir, split='test', transform=data_transforms['test'], stack_frames = True, clara_insisted=False)
 
         framevideostack_loader_train = DataLoader(framevideostack_dataset_train,  batch_size=config.batch_size, shuffle=True)
         framevideostack_loader_val = DataLoader(framevideostack_dataset_val,  batch_size=1, shuffle=False)
         framevideostack_loader_test = DataLoader(framevideostack_dataset_test,  batch_size=1, shuffle=False)
-        
-        print(framevideostack_dataset_train[0].shape)
-
 
         # if config.network == "resnet_3d":
-        model = torch.hub.load('facebookresearch/pytorchvideo', 'slow_r50', pretrained=True)
+        model = torch.hub.load('facebookresearch/pytorchvideo', 'slow_r50', pretrained=True).to(device)
 
         # Replace the classification head with a custom output for 10 classes
-        model.blocks[5].proj = nn.Linear(model.blocks[5].proj.in_features, 10)
-
-
+        model.blocks[5].proj = nn.Linear(model.blocks[5].proj.in_features, 10).to(device)
+        model.to(device)
+        
         optimizer = build_optimizer(model, config.learning_rate)
 
         # # Generate a random id for this run and this model

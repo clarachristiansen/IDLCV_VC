@@ -1,0 +1,45 @@
+ERROR: Unable to locate a modulefile for 'cuda/9.1'
+Loaded dependency [python3/3.10.13]: sqlite3/3.45.1
+Loaded dependency [python3/3.10.13]: gcc/12.3.0-binutils-2.40
+Loaded module: python3/3.10.13
+
+Loading python3/3.10.13
+  Loading requirement: sqlite3/3.45.1 gcc/12.3.0-binutils-2.40
+Loading python3/3.10.13
+  ERROR: Requirement gcc/12.3.0-binutils-2.40 is not loaded
+
+Switching from gcc/12.3.0-binutils-2.40 <aL> to gcc/6.3.0
+  ERROR: Unable to locate a modulefile for 'gcc/6.3.0'
+  WARNING: Reload of dependent python3/3.10.13 failed
+  Unloading dependent: python3/3.10.13
+Loaded module: cuda/11.8
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: s164248 (idlcv). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/5a/e/168430/.netrc
+wandb: Agent Starting Run: 12q1yf8h with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 100
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.01
+wandb: 	network: resnet_3d
+wandb: Tracking run with wandb version 0.18.1
+wandb: Run data is saved locally in /work3/s214734/IDLCV_VC/wandb/run-20241128_193200-12q1yf8h
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run sandy-sweep-1
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_early_initial
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_early_initial/sweeps/q8z0k6u3
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_early_initial/runs/12q1yf8h
+Using cache found in /zhome/5a/e/168430/.cache/torch/hub/facebookresearch_pytorchvideo_main
+  0%|          | 0/100 [00:00<?, ?epoch/s]/zhome/5a/e/168430/.local/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/5a/e/168430/.local/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  1%|          | 1/100 [00:52<1:26:39, 52.52s/epoch]/zhome/5a/e/168430/.local/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/5a/e/168430/.local/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  2%|▏         | 2/100 [01:28<1:10:16, 43.03s/epoch]/zhome/5a/e/168430/.local/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/5a/e/168430/.local/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  3%|▎         | 3/100 [02:06<1:05:13, 40.35s/epoch]
