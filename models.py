@@ -59,68 +59,65 @@ class Dual_Stream(nn.Module):
         super(Dual_Stream, self).__init__()
         
         def make_conv_stream(input_channels):
-                layers = []
-                current_channels = input_channels
-                feature_size = input_size
-                
-                for i in range(num_conv_layers):
-                    out_channels = base_channel_sz * (2 ** i)  # Double the channels for each layer
-                    layers.append(nn.Conv2d(current_channels, out_channels, kernel_size=3, stride=1, padding=1))
-                    layers.append(nn.BatchNorm2d(out_channels))
-                    layers.append(nn.ReLU(inplace=True))
-                    layers.append(nn.MaxPool2d(kernel_size=2, stride=2))  # Reduce spatial size by 2
-                    
-                    current_channels = out_channels
-                    feature_size //= 2  # Update spatial size
-                    
-                    # Stop if spatial dimensions become too small
-                    if feature_size < 2:
-                        print(f"Stopping early after {i + 1} layers due to small feature size.")
-                        break
-                
-                return nn.Sequential(*layers), current_channels, feature_size 
+            layers = []
+            current_channels = input_channels
+            feature_size = input_size
             
+            for i in range(num_conv_layers):
+                out_channels = base_channel_sz * (2 ** i)  # Double the channels for each layer
+                layers.append(nn.Conv2d(current_channels, out_channels, kernel_size=3, stride=1, padding=1))
+                layers.append(nn.BatchNorm2d(out_channels))
+                layers.append(nn.ReLU(inplace=True))
+                layers.append(nn.MaxPool2d(kernel_size=2, stride=2))  # Reduce spatial size by 2
+                
+                current_channels = out_channels
+                feature_size //= 2  # Update spatial size
+                
+                # Stop if spatial dimensions become too small
+                if feature_size < 2:
+                    print(f"Stopping early after {i + 1} layers due to small feature size.")
+                    break
+            
+            return nn.Sequential(*layers), current_channels, feature_size 
+        
         def make_fc(fc_input_features, num_classes):
-            fc_layers =[]
+            fc_layers = []
             for i in range(num_fc_layers):
-                out_features = fc_input_features //2
-                fc_layers.append(nn.Linear(fc_input_features,out_features))
+                out_features = fc_input_features // 2
+                fc_layers.append(nn.Linear(fc_input_features, out_features))
                 fc_layers.append(nn.ReLU())
                 fc_layers.append(nn.Dropout(dropout))
                 fc_input_features = out_features
             fc_layers.append(nn.Linear(fc_input_features, num_classes))
             return nn.Sequential(*fc_layers)
             
-            
-             
-        # spatial stream     
+        # Spatial stream
         self.spatial, spatial_out_channels, spatial_feature_size = make_conv_stream(input_channels)
-        self.fc_spatial = make_fc(spatial_out_channels*(num_conv_layers-1)*spatial_feature_size**2, num_classes)
+        fc_input_spatial = spatial_out_channels * spatial_feature_size ** 2
+        self.fc_spatial = make_fc(fc_input_spatial, num_classes)
         
-        # temporal stream 
-        self.temporal_ef, temporal_out_channels, temporal_feature_size = make_conv_stream(2*(10-1))
-        self.fc_temporal = make_fc(temporal_out_channels*(num_conv_layers-1)*temporal_feature_size**2,num_classes)
-        
-        if spatial_feature_size != temporal_feature_size:
-            print("Feature size of spatial and temporal stream do not match")
-        
-
+        # Temporal stream
+        temporal_input_channels = 2 * (10 - 1)  # Replace 10 with a dynamic sequence length if needed
+        self.temporal_ef, temporal_out_channels, temporal_feature_size = make_conv_stream(temporal_input_channels)
+        fc_input_temporal = temporal_out_channels * temporal_feature_size ** 2
+        self.fc_temporal = make_fc(fc_input_temporal, num_classes)
 
     def forward(self, spatial_input, temporal_input):
-        # the spatial input is [3,W,H] and the temporal [2*(T-1), H, W]
-        
-        # spatial input 
+        # Spatial input: [batch_size, 3, H, W]
         spatial_features = self.spatial(spatial_input)
+        spatial_features = spatial_features.view(spatial_features.size(0), -1)  # Flatten
         spatial_logits = self.fc_spatial(spatial_features)
         spatial_probs = F.softmax(spatial_logits, dim=1)
         
-        # temporal input 
+        # Temporal input: [batch_size, 2*(T-1), H, W]
         temporal_features = self.temporal_ef(temporal_input)
+        temporal_features = temporal_features.view(temporal_features.size(0), -1)  # Flatten
         temporal_logits = self.fc_temporal(temporal_features)
         temporal_probs = F.softmax(temporal_logits, dim=1)
         
-        out = (spatial_probs + temporal_probs)/2
-        return out 
+        # Average the probabilities
+        out = (spatial_probs + temporal_probs) / 2  # Output logits; softmax is applied in loss function
+        return out
 
 def build_optimizer(model, learning_rate):
     ''' lets just select one, as we dont really see a performance difference between sgd and adam.. adam is usually better.'''

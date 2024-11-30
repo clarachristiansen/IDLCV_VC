@@ -1,5 +1,5 @@
-from datasets import FrameImageDataset, get_transforms
-from models import Base_Network, build_optimizer, save_checkpoint
+from datasets_new import FrameImageDataset, get_transforms
+from models import Base_Network, build_optimizer, save_checkpoint, Dual_Stream
 from trainers import _train_every_frame
 
 from torch.utils.data import DataLoader
@@ -90,7 +90,18 @@ def run_wandb(config=None):
             model.fc = nn.Linear(model.fc.in_features, num_classes)
         elif config.network == "base_network":
             model = Base_Network(config.dropout, config.num_layers, num_classes=10) 
+        elif config.network == "dual_stream":
+            model = Dual_Stream(
+            input_channels=3,  # Assuming RGB images for spatial input
+            num_conv_layers=config.num_conv_layers,  # Number of convolutional layers
+            num_fc_layers=config.num_fc_layers,  # Number of fully connected layers
+            base_channel_sz=64,  # Base channel size; adjust as needed
+            num_classes=10,  # Number of output classes
+            input_size=config.image_size,  # Image size (H, W)
+            dropout=config.dropout)  # Dropout rate
         model.to(device)
+    
+        
 
         optimizer = build_optimizer(model, config.learning_rate)
 
