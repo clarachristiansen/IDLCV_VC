@@ -3,7 +3,7 @@
 ### -- specify queue -- 
 #BSUB -q gpua100
 ### -- set the job Name -- 
-#BSUB -J IDLCV_no_leakage_3d_cnn
+#BSUB -J IDLCV_no_leakage_3dcnn
 ### -- ask for number of cores -- 
 #BSUB -n 4
 ### -- Select the resources: 1 gpu in exclusive process mode --
@@ -34,4 +34,4 @@ nvidia-smi
 module load cuda/11.8
 
 #/appl/cuda/11.6.0/samples/bin/x86_64/linux/release/deviceQuery
-python3 3dcnn.py > output.out
+python3 3dcnn_nl.py > output.out
