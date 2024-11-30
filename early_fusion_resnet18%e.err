@@ -1,19 +1,283 @@
 wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: s164248 (idlcv). Use `wandb login --relogin` to force relogin
 wandb: Appending key for api.wandb.ai to your netrc file: /zhome/88/7/117159/.netrc
-wandb: Agent Starting Run: op5fdg3c with config:
+wandb: Agent Starting Run: rfuhodie with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 100
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.001
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /work3/s164248/data/wandb/wandb/run-20241130_091240-rfuhodie
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run clean-sweep-1
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_early_initial
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_early_initial/sweeps/5oq7r9gd
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_early_initial/runs/rfuhodie
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/100 [00:00<?, ?epoch/s]  0%|          | 0/100 [00:00<?, ?epoch/s]
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/early_fusion.py", line 112, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 117, in _train_every_frame
+    train_loss, train_acc = train_one_epoch(model, optimizer, criterion, train_loader, device)
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 31, in train_one_epoch
+    for iteration, (data, target) in enumerate(loader):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/datasets.py", line 111, in __getitem__
+    frames = torch.stack(frames).permute(1, 0, 2, 3)
+UnboundLocalError: local variable 'frames' referenced before assignment
+wandb:                                                                                
+wandb: 🚀 View run clean-sweep-1 at: https://wandb.ai/idlcv/Video_early_initial/runs/rfuhodie
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_early_initial
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /work3/s164248/data/wandb/wandb/run-20241130_091240-rfuhodie/logs
+Run rfuhodie errored:
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/early_fusion.py", line 112, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 117, in _train_every_frame
+    train_loss, train_acc = train_one_epoch(model, optimizer, criterion, train_loader, device)
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 31, in train_one_epoch
+    for iteration, (data, target) in enumerate(loader):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/datasets.py", line 111, in __getitem__
+    frames = torch.stack(frames).permute(1, 0, 2, 3)
+UnboundLocalError: local variable 'frames' referenced before assignment
+
+wandb: ERROR Run rfuhodie errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/early_fusion.py", line 112, in run_wandb
+wandb: ERROR     _train_every_frame(model, optimizer, criterion,
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 117, in _train_every_frame
+wandb: ERROR     train_loss, train_acc = train_one_epoch(model, optimizer, criterion, train_loader, device)
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 31, in train_one_epoch
+wandb: ERROR     for iteration, (data, target) in enumerate(loader):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+wandb: ERROR     data = self._next_data()
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+wandb: ERROR     data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+wandb: ERROR     data = [self.dataset[idx] for idx in possibly_batched_index]
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+wandb: ERROR     data = [self.dataset[idx] for idx in possibly_batched_index]
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/datasets.py", line 111, in __getitem__
+wandb: ERROR     frames = torch.stack(frames).permute(1, 0, 2, 3)
+wandb: ERROR UnboundLocalError: local variable 'frames' referenced before assignment
+wandb: ERROR 
+wandb: Agent Starting Run: vcwv1wz9 with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 100
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.001
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /work3/s164248/data/wandb/wandb/run-20241130_091246-vcwv1wz9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run neat-sweep-2
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_early_initial
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_early_initial/sweeps/5oq7r9gd
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_early_initial/runs/vcwv1wz9
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/100 [00:00<?, ?epoch/s]  0%|          | 0/100 [00:00<?, ?epoch/s]
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/early_fusion.py", line 112, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 117, in _train_every_frame
+    train_loss, train_acc = train_one_epoch(model, optimizer, criterion, train_loader, device)
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 31, in train_one_epoch
+    for iteration, (data, target) in enumerate(loader):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/datasets.py", line 111, in __getitem__
+    frames = torch.stack(frames).permute(1, 0, 2, 3)
+UnboundLocalError: local variable 'frames' referenced before assignment
+wandb:                                                                                
+wandb: 🚀 View run neat-sweep-2 at: https://wandb.ai/idlcv/Video_early_initial/runs/vcwv1wz9
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_early_initial
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /work3/s164248/data/wandb/wandb/run-20241130_091246-vcwv1wz9/logs
+Run vcwv1wz9 errored:
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/early_fusion.py", line 112, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 117, in _train_every_frame
+    train_loss, train_acc = train_one_epoch(model, optimizer, criterion, train_loader, device)
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 31, in train_one_epoch
+    for iteration, (data, target) in enumerate(loader):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/datasets.py", line 111, in __getitem__
+    frames = torch.stack(frames).permute(1, 0, 2, 3)
+UnboundLocalError: local variable 'frames' referenced before assignment
+
+wandb: ERROR Run vcwv1wz9 errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/early_fusion.py", line 112, in run_wandb
+wandb: ERROR     _train_every_frame(model, optimizer, criterion,
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 117, in _train_every_frame
+wandb: ERROR     train_loss, train_acc = train_one_epoch(model, optimizer, criterion, train_loader, device)
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 31, in train_one_epoch
+wandb: ERROR     for iteration, (data, target) in enumerate(loader):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+wandb: ERROR     data = self._next_data()
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+wandb: ERROR     data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+wandb: ERROR     data = [self.dataset[idx] for idx in possibly_batched_index]
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+wandb: ERROR     data = [self.dataset[idx] for idx in possibly_batched_index]
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/datasets.py", line 111, in __getitem__
+wandb: ERROR     frames = torch.stack(frames).permute(1, 0, 2, 3)
+wandb: ERROR UnboundLocalError: local variable 'frames' referenced before assignment
+wandb: ERROR 
+wandb: Agent Starting Run: gnbz02pq with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 100
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.001
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /work3/s164248/data/wandb/wandb/run-20241130_091251-gnbz02pq
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run legendary-sweep-3
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_early_initial
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_early_initial/sweeps/5oq7r9gd
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_early_initial/runs/gnbz02pq
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/100 [00:00<?, ?epoch/s]  0%|          | 0/100 [00:00<?, ?epoch/s]
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/early_fusion.py", line 112, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 117, in _train_every_frame
+    train_loss, train_acc = train_one_epoch(model, optimizer, criterion, train_loader, device)
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 31, in train_one_epoch
+    for iteration, (data, target) in enumerate(loader):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/datasets.py", line 111, in __getitem__
+    frames = torch.stack(frames).permute(1, 0, 2, 3)
+UnboundLocalError: local variable 'frames' referenced before assignment
+wandb:                                                                                
+wandb: 🚀 View run legendary-sweep-3 at: https://wandb.ai/idlcv/Video_early_initial/runs/gnbz02pq
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_early_initial
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /work3/s164248/data/wandb/wandb/run-20241130_091251-gnbz02pq/logs
+Run gnbz02pq errored:
+Traceback (most recent call last):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/early_fusion.py", line 112, in run_wandb
+    _train_every_frame(model, optimizer, criterion,
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 117, in _train_every_frame
+    train_loss, train_acc = train_one_epoch(model, optimizer, criterion, train_loader, device)
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 31, in train_one_epoch
+    for iteration, (data, target) in enumerate(loader):
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/88/7/117159/Courses/IDLCV_VC/datasets.py", line 111, in __getitem__
+    frames = torch.stack(frames).permute(1, 0, 2, 3)
+UnboundLocalError: local variable 'frames' referenced before assignment
+
+wandb: ERROR Run gnbz02pq errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/early_fusion.py", line 112, in run_wandb
+wandb: ERROR     _train_every_frame(model, optimizer, criterion,
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 117, in _train_every_frame
+wandb: ERROR     train_loss, train_acc = train_one_epoch(model, optimizer, criterion, train_loader, device)
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/trainers.py", line 31, in train_one_epoch
+wandb: ERROR     for iteration, (data, target) in enumerate(loader):
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+wandb: ERROR     data = self._next_data()
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+wandb: ERROR     data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+wandb: ERROR     data = [self.dataset[idx] for idx in possibly_batched_index]
+wandb: ERROR   File "/zhome/88/7/117159/venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+wandb: ERROR     data = [self.dataset[idx] for idx in possibly_batched_index]
+wandb: ERROR   File "/zhome/88/7/117159/Courses/IDLCV_VC/datasets.py", line 111, in __getitem__
+wandb: ERROR     frames = torch.stack(frames).permute(1, 0, 2, 3)
+wandb: ERROR UnboundLocalError: local variable 'frames' referenced before assignment
+wandb: ERROR 
+Detected 3 failed runs in the first 60 seconds, killing sweep.
+wandb: ERROR Detected 3 failed runs in the first 60 seconds, killing sweep.
+wandb: To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: s164248 (idlcv). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/88/7/117159/.netrc
+wandb: Agent Starting Run: xaltr81i with config:
 wandb: 	batch_size: 64
 wandb: 	epochs: 100
 wandb: 	image_size: 224
 wandb: 	learning_rate: 0.01
 wandb: 	network: resnet18
 wandb: Tracking run with wandb version 0.18.5
-wandb: Run data is saved locally in /zhome/88/7/117159/Courses/IDLCV_VC/wandb/run-20241123_181224-op5fdg3c
+wandb: Run data is saved locally in /work3/s164248/data/wandb/wandb/run-20241130_091510-xaltr81i
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run effortless-sweep-1
+wandb: Syncing run twilight-sweep-1
 wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_early_initial
-wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_early_initial/sweeps/y6g8ztvv
-wandb: 🚀 View run at https://wandb.ai/idlcv/Video_early_initial/runs/op5fdg3c
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_early_initial/sweeps/ltfv6ki6
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_early_initial/runs/xaltr81i
 Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
 /zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
   warnings.warn(
@@ -23,28 +287,408 @@ Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
 /zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-  1%|          | 1/100 [00:20<33:08, 20.09s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  1%|          | 1/100 [00:16<27:50, 16.88s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
 /zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-  2%|▏         | 2/100 [00:32<25:39, 15.71s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  2%|▏         | 2/100 [00:30<24:52, 15.23s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
 /zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-  3%|▎         | 3/100 [00:46<23:42, 14.66s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  3%|▎         | 3/100 [00:44<23:16, 14.40s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
 /zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-  4%|▍         | 4/100 [00:58<22:14, 13.90s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  4%|▍         | 4/100 [00:58<22:36, 14.13s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
 /zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-  5%|▌         | 5/100 [01:12<22:05, 13.95s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  5%|▌         | 5/100 [01:12<22:19, 14.10s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
 /zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-  6%|▌         | 6/100 [01:25<21:09, 13.50s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  6%|▌         | 6/100 [01:25<21:55, 14.00s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
 /zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-  7%|▋         | 7/100 [01:37<20:22, 13.15s/epoch]
+  7%|▋         | 7/100 [01:39<21:41, 14.00s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  8%|▊         | 8/100 [01:53<21:25, 13.98s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  9%|▉         | 9/100 [02:07<21:11, 13.98s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 10%|█         | 10/100 [02:21<20:53, 13.93s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 11%|█         | 11/100 [02:35<20:42, 13.96s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 12%|█▏        | 12/100 [02:49<20:20, 13.87s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 13%|█▎        | 13/100 [03:03<20:08, 13.89s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 14%|█▍        | 14/100 [03:17<19:57, 13.92s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 15%|█▌        | 15/100 [03:31<19:41, 13.90s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 16%|█▌        | 16/100 [03:44<19:22, 13.84s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 17%|█▋        | 17/100 [03:58<19:05, 13.80s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 18%|█▊        | 18/100 [04:12<18:45, 13.72s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 19%|█▉        | 19/100 [04:25<18:32, 13.74s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 20%|██        | 20/100 [04:39<18:25, 13.82s/epoch] 21%|██        | 21/100 [04:54<18:19, 13.92s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 22%|██▏       | 22/100 [05:07<18:04, 13.90s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 23%|██▎       | 23/100 [05:21<17:51, 13.92s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 24%|██▍       | 24/100 [05:35<17:39, 13.94s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 25%|██▌       | 25/100 [05:49<17:19, 13.86s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 26%|██▌       | 26/100 [06:03<17:01, 13.81s/epoch] 27%|██▋       | 27/100 [06:16<16:42, 13.73s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 28%|██▊       | 28/100 [06:30<16:25, 13.69s/epoch] 29%|██▉       | 29/100 [06:43<16:08, 13.65s/epoch] 30%|███       | 30/100 [06:57<15:46, 13.52s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 31%|███       | 31/100 [07:10<15:30, 13.48s/epoch] 32%|███▏      | 32/100 [07:24<15:18, 13.51s/epoch] 33%|███▎      | 33/100 [07:37<15:08, 13.55s/epoch] 34%|███▍      | 34/100 [07:51<15:00, 13.64s/epoch] 35%|███▌      | 35/100 [08:05<14:46, 13.63s/epoch] 36%|███▌      | 36/100 [08:19<14:38, 13.72s/epoch] 37%|███▋      | 37/100 [08:32<14:21, 13.67s/epoch] 38%|███▊      | 38/100 [08:46<14:08, 13.69s/epoch] 39%|███▉      | 39/100 [09:00<13:56, 13.71s/epoch] 40%|████      | 40/100 [09:13<13:41, 13.69s/epoch] 41%|████      | 41/100 [09:27<13:27, 13.69s/epoch] 42%|████▏     | 42/100 [09:41<13:23, 13.85s/epoch] 43%|████▎     | 43/100 [09:55<13:09, 13.86s/epoch] 44%|████▍     | 44/100 [10:09<12:52, 13.80s/epoch] 45%|████▌     | 45/100 [10:22<12:36, 13.75s/epoch] 46%|████▌     | 46/100 [10:36<12:23, 13.77s/epoch] 47%|████▋     | 47/100 [10:50<12:14, 13.86s/epoch] 48%|████▊     | 48/100 [11:04<11:56, 13.79s/epoch] 49%|████▉     | 49/100 [11:18<11:41, 13.75s/epoch] 50%|█████     | 50/100 [11:31<11:25, 13.71s/epoch] 51%|█████     | 51/100 [11:45<11:08, 13.65s/epoch] 52%|█████▏    | 52/100 [11:58<10:55, 13.65s/epoch] 53%|█████▎    | 53/100 [12:12<10:45, 13.74s/epoch] 54%|█████▍    | 54/100 [12:26<10:35, 13.82s/epoch] 55%|█████▌    | 55/100 [12:40<10:23, 13.86s/epoch] 56%|█████▌    | 56/100 [12:54<10:11, 13.91s/epoch] 57%|█████▋    | 57/100 [13:08<10:00, 13.98s/epoch] 58%|█████▊    | 58/100 [13:22<09:48, 14.01s/epoch] 59%|█████▉    | 59/100 [13:36<09:26, 13.81s/epoch] 60%|██████    | 60/100 [13:49<09:07, 13.68s/epoch] 61%|██████    | 61/100 [14:02<08:48, 13.56s/epoch] 62%|██████▏   | 62/100 [14:16<08:31, 13.46s/epoch] 63%|██████▎   | 63/100 [14:30<08:24, 13.63s/epoch] 64%|██████▍   | 64/100 [14:43<08:02, 13.39s/epoch] 65%|██████▌   | 65/100 [14:55<07:40, 13.16s/epoch] 66%|██████▌   | 66/100 [15:08<07:28, 13.19s/epoch] 67%|██████▋   | 67/100 [15:22<07:19, 13.31s/epoch] 68%|██████▊   | 68/100 [15:36<07:09, 13.41s/epoch] 69%|██████▉   | 69/100 [15:49<06:56, 13.43s/epoch] 70%|███████   | 70/100 [16:03<06:48, 13.61s/epoch] 71%|███████   | 71/100 [16:17<06:33, 13.56s/epoch] 72%|███████▏  | 72/100 [16:30<06:20, 13.57s/epoch] 73%|███████▎  | 73/100 [16:44<06:05, 13.54s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 74%|███████▍  | 74/100 [16:57<05:51, 13.53s/epoch] 75%|███████▌  | 75/100 [17:11<05:39, 13.59s/epoch] 76%|███████▌  | 76/100 [17:25<05:30, 13.76s/epoch] 77%|███████▋  | 77/100 [17:39<05:19, 13.87s/epoch] 78%|███████▊  | 78/100 [17:53<05:04, 13.84s/epoch] 79%|███████▉  | 79/100 [18:07<04:49, 13.80s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 80%|████████  | 80/100 [18:20<04:35, 13.79s/epoch] 81%|████████  | 81/100 [18:34<04:22, 13.82s/epoch] 82%|████████▏ | 82/100 [18:48<04:08, 13.81s/epoch] 83%|████████▎ | 83/100 [19:02<03:55, 13.83s/epoch] 84%|████████▍ | 84/100 [19:16<03:43, 13.95s/epoch] 85%|████████▌ | 85/100 [19:30<03:30, 14.03s/epoch] 86%|████████▌ | 86/100 [19:44<03:15, 13.96s/epoch] 87%|████████▋ | 87/100 [19:58<03:01, 13.99s/epoch] 88%|████████▊ | 88/100 [20:12<02:47, 13.93s/epoch] 89%|████████▉ | 89/100 [20:26<02:33, 13.94s/epoch] 90%|█████████ | 90/100 [20:40<02:18, 13.89s/epoch] 91%|█████████ | 91/100 [20:54<02:05, 13.91s/epoch] 92%|█████████▏| 92/100 [21:07<01:50, 13.84s/epoch] 93%|█████████▎| 93/100 [21:21<01:36, 13.81s/epoch] 94%|█████████▍| 94/100 [21:35<01:22, 13.80s/epoch] 95%|█████████▌| 95/100 [21:48<01:08, 13.64s/epoch] 96%|█████████▌| 96/100 [22:02<00:54, 13.61s/epoch] 97%|█████████▋| 97/100 [22:15<00:40, 13.58s/epoch] 98%|█████████▊| 98/100 [22:29<00:27, 13.52s/epoch] 99%|█████████▉| 99/100 [22:42<00:13, 13.47s/epoch]100%|██████████| 100/100 [22:55<00:00, 13.39s/epoch]100%|██████████| 100/100 [22:55<00:00, 13.76s/epoch]
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁▁▁▁▁▂▂▂▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇▇██
+wandb:        test_acc ▁▂▂▁▁▁▂▃▂▃▄▂▄▄▆▆▇▆▇▇▇▇▇▇▇█▇▄▄▅▇▇▇▇██████
+wandb:         test_f1 ▁▂▂▂▂▂▂▂▃▂▃▃▄▃▆▆▇▇▅▇▇▇▇▇▇██▇████▅▇▇▆████
+wandb:  test_precision ▁▁▂▂▂▄▃▃▄▃▅▆▆▇▇▇▆█▆▆█▇████████▇▇▇▇██████
+wandb:     test_recall ▁▁▂▂▂▂▂▂▃▃▂▂▄▄▅▅▄▇▆▇██▆█████▇▅▄▆▇▇▇█████
+wandb:       train_acc ▁▁▁▂▂▂▃▃▃▃▃▅▄▄▆▆▆█████████████▇█████████
+wandb:      train_loss █▆▅▅▅▅▄▄▄▄▃▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁
+wandb:          val_f1 ▁▁▁▁▁▂▂▂▂▂▃▅▆▃▆▇▅█▇▇▇████████▇▆▆▆▇██████
+wandb:   val_precision ▁▂▂▂▂▃▅▅▅▂▅▆▆▇█▇▇██▇█████▇▆▆▇▇▇█████████
+wandb:      val_recall ▁▁▁▁▁▁▁▂▂▂▄▃▃▃▆▇▇▆▇████▇▇█▄▆▄▅▆▇▇▇▇█████
+wandb:  validation_acc ▁▁▂▁▁▁▂▂▂▃▃▃▅▆▅▆█▇█████▇▇████▇▄▅▄▆▇▇████
+wandb: validation_loss █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:           epoch 99
+wandb:          run_id xaltr81i
+wandb:        test_acc 0.84167
+wandb:         test_f1 0.83927
+wandb:  test_precision 0.85083
+wandb:     test_recall 0.84167
+wandb:       train_acc 1
+wandb:      train_loss 0.00027
+wandb:          val_f1 0.80687
+wandb:   val_precision 0.83141
+wandb:      val_recall 0.81667
+wandb:  validation_acc 0.81667
+wandb: validation_loss 1.09475
+wandb: 
+wandb: 🚀 View run twilight-sweep-1 at: https://wandb.ai/idlcv/Video_early_initial/runs/xaltr81i
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_early_initial
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /work3/s164248/data/wandb/wandb/run-20241130_091510-xaltr81i/logs
+wandb: Agent Starting Run: irfmnafh with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 100
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.01
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /work3/s164248/data/wandb/wandb/run-20241130_093813-irfmnafh
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run olive-sweep-2
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_early_initial
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_early_initial/sweeps/ltfv6ki6
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_early_initial/runs/irfmnafh
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/100 [00:00<?, ?epoch/s]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  1%|          | 1/100 [00:13<22:37, 13.71s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  2%|▏         | 2/100 [00:27<22:45, 13.93s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  3%|▎         | 3/100 [00:41<22:42, 14.04s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  4%|▍         | 4/100 [00:55<22:16, 13.92s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  5%|▌         | 5/100 [01:10<22:15, 14.06s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  6%|▌         | 6/100 [01:23<21:54, 13.98s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  7%|▋         | 7/100 [01:37<21:32, 13.90s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  8%|▊         | 8/100 [01:51<21:21, 13.92s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  9%|▉         | 9/100 [02:05<20:57, 13.82s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 10%|█         | 10/100 [02:18<20:42, 13.80s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 11%|█         | 11/100 [02:32<20:25, 13.77s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 12%|█▏        | 12/100 [02:46<20:04, 13.69s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 13%|█▎        | 13/100 [02:59<19:46, 13.63s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 14%|█▍        | 14/100 [03:13<19:33, 13.64s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 15%|█▌        | 15/100 [03:26<19:18, 13.63s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 16%|█▌        | 16/100 [03:40<19:03, 13.61s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 17%|█▋        | 17/100 [03:54<19:08, 13.84s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 18%|█▊        | 18/100 [04:08<18:51, 13.79s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 19%|█▉        | 19/100 [04:22<18:43, 13.87s/epoch] 20%|██        | 20/100 [04:36<18:32, 13.90s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 21%|██        | 21/100 [04:50<18:15, 13.86s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 22%|██▏       | 22/100 [05:04<18:00, 13.85s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 23%|██▎       | 23/100 [05:17<17:43, 13.81s/epoch] 24%|██▍       | 24/100 [05:31<17:29, 13.81s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 25%|██▌       | 25/100 [05:45<17:19, 13.86s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 26%|██▌       | 26/100 [05:59<17:03, 13.84s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 27%|██▋       | 27/100 [06:13<16:46, 13.78s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 28%|██▊       | 28/100 [06:26<16:23, 13.66s/epoch] 29%|██▉       | 29/100 [06:39<16:05, 13.60s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 30%|███       | 30/100 [06:53<15:44, 13.49s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 31%|███       | 31/100 [07:06<15:22, 13.37s/epoch] 32%|███▏      | 32/100 [07:20<15:27, 13.65s/epoch] 33%|███▎      | 33/100 [07:35<15:40, 14.04s/epoch] 34%|███▍      | 34/100 [07:49<15:28, 14.07s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 35%|███▌      | 35/100 [08:03<15:13, 14.05s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 36%|███▌      | 36/100 [08:17<14:57, 14.02s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 37%|███▋      | 37/100 [08:32<14:53, 14.19s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 38%|███▊      | 38/100 [08:46<14:36, 14.13s/epoch] 39%|███▉      | 39/100 [09:00<14:19, 14.09s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 40%|████      | 40/100 [09:13<13:46, 13.78s/epoch] 41%|████      | 41/100 [09:26<13:25, 13.65s/epoch] 42%|████▏     | 42/100 [09:39<13:03, 13.50s/epoch] 43%|████▎     | 43/100 [09:52<12:43, 13.40s/epoch] 44%|████▍     | 44/100 [10:05<12:24, 13.29s/epoch] 45%|████▌     | 45/100 [10:19<12:11, 13.31s/epoch] 46%|████▌     | 46/100 [10:32<11:59, 13.33s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 47%|████▋     | 47/100 [10:45<11:46, 13.32s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 48%|████▊     | 48/100 [10:59<11:29, 13.26s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+ 49%|████▉     | 49/100 [11:12<11:13, 13.21s/epoch] 50%|█████     | 50/100 [11:25<10:58, 13.17s/epoch] 51%|█████     | 51/100 [11:38<10:42, 13.11s/epoch] 52%|█████▏    | 52/100 [11:51<10:31, 13.15s/epoch] 53%|█████▎    | 53/100 [12:04<10:17, 13.13s/epoch] 54%|█████▍    | 54/100 [12:17<09:56, 12.98s/epoch] 55%|█████▌    | 55/100 [12:30<09:42, 12.95s/epoch] 56%|█████▌    | 56/100 [12:43<09:31, 12.99s/epoch] 57%|█████▋    | 57/100 [12:56<09:27, 13.19s/epoch] 58%|█████▊    | 58/100 [13:09<09:14, 13.20s/epoch] 59%|█████▉    | 59/100 [13:23<09:00, 13.18s/epoch] 60%|██████    | 60/100 [13:36<08:44, 13.11s/epoch] 61%|██████    | 61/100 [13:49<08:33, 13.16s/epoch] 62%|██████▏   | 62/100 [14:02<08:20, 13.17s/epoch] 63%|██████▎   | 63/100 [14:15<08:05, 13.13s/epoch] 64%|██████▍   | 64/100 [14:28<07:55, 13.20s/epoch] 65%|██████▌   | 65/100 [14:42<07:42, 13.21s/epoch] 66%|██████▌   | 66/100 [14:55<07:32, 13.31s/epoch] 67%|██████▋   | 67/100 [15:09<07:19, 13.31s/epoch] 68%|██████▊   | 68/100 [15:22<07:05, 13.30s/epoch] 69%|██████▉   | 69/100 [15:35<06:50, 13.23s/epoch] 70%|███████   | 70/100 [15:48<06:38, 13.28s/epoch] 71%|███████   | 71/100 [16:02<06:27, 13.35s/epoch] 72%|███████▏  | 72/100 [16:15<06:11, 13.25s/epoch] 73%|███████▎  | 73/100 [16:28<05:56, 13.21s/epoch] 74%|███████▍  | 74/100 [16:41<05:44, 13.25s/epoch] 75%|███████▌  | 75/100 [16:54<05:29, 13.19s/epoch] 76%|███████▌  | 76/100 [17:07<05:14, 13.08s/epoch] 77%|███████▋  | 77/100 [17:20<05:02, 13.16s/epoch] 78%|███████▊  | 78/100 [17:34<04:49, 13.18s/epoch] 79%|███████▉  | 79/100 [17:47<04:37, 13.22s/epoch] 80%|████████  | 80/100 [18:00<04:23, 13.19s/epoch] 81%|████████  | 81/100 [18:13<04:10, 13.17s/epoch] 82%|████████▏ | 82/100 [18:26<03:57, 13.19s/epoch] 83%|████████▎ | 83/100 [18:40<03:44, 13.23s/epoch] 84%|████████▍ | 84/100 [18:53<03:31, 13.22s/epoch] 85%|████████▌ | 85/100 [19:06<03:17, 13.19s/epoch] 86%|████████▌ | 86/100 [19:19<03:04, 13.19s/epoch] 87%|████████▋ | 87/100 [19:32<02:51, 13.17s/epoch] 88%|████████▊ | 88/100 [19:46<02:38, 13.18s/epoch] 89%|████████▉ | 89/100 [19:58<02:23, 13.07s/epoch] 90%|█████████ | 90/100 [20:11<02:10, 13.07s/epoch] 91%|█████████ | 91/100 [20:25<01:58, 13.18s/epoch] 92%|█████████▏| 92/100 [20:38<01:45, 13.16s/epoch] 93%|█████████▎| 93/100 [20:52<01:32, 13.25s/epoch] 94%|█████████▍| 94/100 [21:05<01:19, 13.22s/epoch] 95%|█████████▌| 95/100 [21:18<01:05, 13.19s/epoch] 96%|█████████▌| 96/100 [21:31<00:52, 13.20s/epoch] 97%|█████████▋| 97/100 [21:44<00:39, 13.16s/epoch] 98%|█████████▊| 98/100 [21:57<00:26, 13.14s/epoch] 99%|█████████▉| 99/100 [22:10<00:13, 13.08s/epoch]100%|██████████| 100/100 [22:23<00:00, 13.09s/epoch]100%|██████████| 100/100 [22:23<00:00, 13.44s/epoch]
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁▁▁▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▆▆▇▇▇▇███
+wandb:        test_acc ▁▁▁▁▂▂▂▂▃▂▂▂▃▃▂▄▅▄▄▄▃▄▆▆▇▆▇█▇▆▆▇█▇██████
+wandb:         test_f1 ▁▁▁▁▂▂▂▂▃▃▂▃▃▃▅▅▄▅▄▅▇▇▆▆▇▆▆▆▇█▆▇▇█▇█████
+wandb:  test_precision ▁▁▁▁▁▄▃▄▂▂▃▄▃▄▄▆▅▇▅▅▇▇▇▇▇▇▇▇▇▇██▇▇▇█████
+wandb:     test_recall ▁▁▁▁▂▂▂▂▂▃▂▂▃▃▂▃▅▄▄▆▃▆▇▇▇▆▇█▇▆█▇▇▇██████
+wandb:       train_acc ▁▁▁▂▂▂▂▃▃▃▄▄▄▄▄▅▅▇▇▇████████████████████
+wandb:      train_loss █▆▅▆▅▅▅▅▅▅▅▄▄▄▄▄▄▄▃▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:          val_f1 ▁▁▁▁▁▂▂▂▂▂▂▂▂▂▃▃▄▃▄▄▅▅▆▇▇▇▆▇▆▇▇▇▇█▇█████
+wandb:   val_precision ▁▁▁▁▂▃▂▃▂▂▃▃▅▃▄▅▆▅▆▇▆▇▇▇▇▇▆▇▇▇███▇██████
+wandb:      val_recall ▁▁▁▁▁▂▂▂▂▃▂▂▂▂▄▄▅▅▅▅▆▆▆▇▇▅▅▇▇▇▆████▇████
+wandb:  validation_acc ▁▁▁▁▂▂▂▂▂▁▂▂▃▂▃▅▄▄▅▄▄▅▆▆▇▇▇▇▆▆▇▇▇▆█▇████
+wandb: validation_loss █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:           epoch 99
+wandb:          run_id irfmnafh
+wandb:        test_acc 0.80833
+wandb:         test_f1 0.80802
+wandb:  test_precision 0.81817
+wandb:     test_recall 0.80833
+wandb:       train_acc 1
+wandb:      train_loss 0.00059
+wandb:          val_f1 0.7347
+wandb:   val_precision 0.76244
+wandb:      val_recall 0.73333
+wandb:  validation_acc 0.73333
+wandb: validation_loss 2.48898
+wandb: 
+wandb: 🚀 View run olive-sweep-2 at: https://wandb.ai/idlcv/Video_early_initial/runs/irfmnafh
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_early_initial
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /work3/s164248/data/wandb/wandb/run-20241130_093813-irfmnafh/logs
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: gc1tk2vl with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 100
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.001
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /work3/s164248/data/wandb/wandb/run-20241130_100050-gc1tk2vl
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run gallant-sweep-3
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_early_initial
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_early_initial/sweeps/ltfv6ki6
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_early_initial/runs/gc1tk2vl
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/100 [00:00<?, ?epoch/s]  1%|          | 1/100 [00:13<21:42, 13.15s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  2%|▏         | 2/100 [00:26<21:29, 13.15s/epoch]  3%|▎         | 3/100 [00:39<21:07, 13.07s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  4%|▍         | 4/100 [00:52<20:52, 13.05s/epoch]  5%|▌         | 5/100 [01:05<20:40, 13.06s/epoch]  6%|▌         | 6/100 [01:18<20:29, 13.08s/epoch]  7%|▋         | 7/100 [01:31<20:11, 13.03s/epoch]  8%|▊         | 8/100 [01:44<19:58, 13.03s/epoch]  9%|▉         | 9/100 [01:57<19:46, 13.04s/epoch] 10%|█         | 10/100 [02:10<19:28, 12.98s/epoch] 11%|█         | 11/100 [02:23<19:13, 12.96s/epoch] 12%|█▏        | 12/100 [02:36<18:58, 12.94s/epoch] 13%|█▎        | 13/100 [02:48<18:41, 12.89s/epoch] 14%|█▍        | 14/100 [03:01<18:25, 12.85s/epoch] 15%|█▌        | 15/100 [03:14<18:15, 12.88s/epoch] 16%|█▌        | 16/100 [03:27<18:01, 12.88s/epoch] 17%|█▋        | 17/100 [03:40<17:46, 12.85s/epoch] 18%|█▊        | 18/100 [03:53<17:32, 12.84s/epoch] 19%|█▉        | 19/100 [04:05<17:19, 12.84s/epoch] 20%|██        | 20/100 [04:18<17:06, 12.83s/epoch] 21%|██        | 21/100 [04:31<16:58, 12.89s/epoch] 22%|██▏       | 22/100 [04:44<16:41, 12.84s/epoch] 23%|██▎       | 23/100 [04:57<16:28, 12.84s/epoch] 24%|██▍       | 24/100 [05:10<16:19, 12.89s/epoch] 25%|██▌       | 25/100 [05:23<16:08, 12.91s/epoch] 26%|██▌       | 26/100 [05:36<15:58, 12.96s/epoch] 27%|██▋       | 27/100 [05:49<15:48, 12.99s/epoch] 28%|██▊       | 28/100 [06:02<15:32, 12.96s/epoch] 29%|██▉       | 29/100 [06:15<15:15, 12.89s/epoch] 30%|███       | 30/100 [06:27<15:02, 12.89s/epoch] 31%|███       | 31/100 [06:40<14:47, 12.86s/epoch] 32%|███▏      | 32/100 [06:53<14:34, 12.86s/epoch] 33%|███▎      | 33/100 [07:06<14:18, 12.81s/epoch] 34%|███▍      | 34/100 [07:19<14:03, 12.79s/epoch] 35%|███▌      | 35/100 [07:31<13:54, 12.83s/epoch] 36%|███▌      | 36/100 [07:45<13:47, 12.92s/epoch] 37%|███▋      | 37/100 [07:58<13:34, 12.93s/epoch] 38%|███▊      | 38/100 [08:11<13:23, 12.96s/epoch] 39%|███▉      | 39/100 [08:24<13:09, 12.95s/epoch] 40%|████      | 40/100 [08:37<13:00, 13.01s/epoch] 41%|████      | 41/100 [08:50<12:44, 12.97s/epoch] 42%|████▏     | 42/100 [09:03<12:36, 13.04s/epoch] 43%|████▎     | 43/100 [09:16<12:22, 13.02s/epoch] 44%|████▍     | 44/100 [09:29<12:08, 13.01s/epoch] 45%|████▌     | 45/100 [09:42<11:58, 13.07s/epoch] 46%|████▌     | 46/100 [09:55<11:42, 13.01s/epoch] 47%|████▋     | 47/100 [10:08<11:26, 12.95s/epoch] 48%|████▊     | 48/100 [10:21<11:13, 12.95s/epoch] 49%|████▉     | 49/100 [10:34<11:02, 12.99s/epoch] 50%|█████     | 50/100 [10:47<10:49, 12.99s/epoch] 51%|█████     | 51/100 [11:00<10:35, 12.97s/epoch] 52%|█████▏    | 52/100 [11:12<10:22, 12.96s/epoch] 53%|█████▎    | 53/100 [11:25<10:09, 12.97s/epoch] 54%|█████▍    | 54/100 [11:39<09:57, 12.99s/epoch] 55%|█████▌    | 55/100 [11:52<09:45, 13.02s/epoch] 56%|█████▌    | 56/100 [12:05<09:32, 13.00s/epoch] 57%|█████▋    | 57/100 [12:18<09:18, 12.99s/epoch] 58%|█████▊    | 58/100 [12:31<09:06, 13.02s/epoch] 59%|█████▉    | 59/100 [12:44<09:00, 13.18s/epoch] 60%|██████    | 60/100 [12:58<08:51, 13.29s/epoch] 61%|██████    | 61/100 [13:11<08:40, 13.35s/epoch] 62%|██████▏   | 62/100 [13:25<08:35, 13.56s/epoch] 63%|██████▎   | 63/100 [13:39<08:20, 13.53s/epoch] 64%|██████▍   | 64/100 [13:52<08:04, 13.47s/epoch] 65%|██████▌   | 65/100 [14:06<07:51, 13.47s/epoch] 66%|██████▌   | 66/100 [14:19<07:37, 13.45s/epoch] 67%|██████▋   | 67/100 [14:35<07:54, 14.37s/epoch] 68%|██████▊   | 68/100 [14:53<08:11, 15.36s/epoch] 69%|██████▉   | 69/100 [15:06<07:37, 14.77s/epoch] 70%|███████   | 70/100 [15:20<07:12, 14.42s/epoch] 71%|███████   | 71/100 [15:34<06:51, 14.17s/epoch] 72%|███████▏  | 72/100 [15:47<06:31, 13.98s/epoch] 73%|███████▎  | 73/100 [16:01<06:14, 13.86s/epoch] 74%|███████▍  | 74/100 [16:15<06:01, 13.89s/epoch] 75%|███████▌  | 75/100 [16:28<05:43, 13.74s/epoch] 76%|███████▌  | 76/100 [16:41<05:26, 13.61s/epoch] 77%|███████▋  | 77/100 [16:55<05:15, 13.72s/epoch] 78%|███████▊  | 78/100 [17:09<04:59, 13.64s/epoch] 79%|███████▉  | 79/100 [17:23<04:46, 13.67s/epoch] 80%|████████  | 80/100 [17:36<04:33, 13.69s/epoch] 81%|████████  | 81/100 [17:50<04:21, 13.75s/epoch] 82%|████████▏ | 82/100 [18:04<04:07, 13.73s/epoch] 83%|████████▎ | 83/100 [18:18<03:55, 13.83s/epoch] 84%|████████▍ | 84/100 [18:32<03:43, 13.96s/epoch] 85%|████████▌ | 85/100 [18:46<03:28, 13.92s/epoch] 86%|████████▌ | 86/100 [19:00<03:15, 13.93s/epoch] 87%|████████▋ | 87/100 [19:14<03:00, 13.89s/epoch] 88%|████████▊ | 88/100 [19:28<02:47, 13.95s/epoch] 89%|████████▉ | 89/100 [19:42<02:32, 13.89s/epoch] 90%|█████████ | 90/100 [19:55<02:18, 13.82s/epoch] 91%|█████████ | 91/100 [20:09<02:05, 13.92s/epoch] 92%|█████████▏| 92/100 [20:23<01:51, 13.92s/epoch] 93%|█████████▎| 93/100 [20:37<01:37, 13.91s/epoch] 94%|█████████▍| 94/100 [20:51<01:22, 13.82s/epoch] 95%|█████████▌| 95/100 [21:04<01:07, 13.58s/epoch] 96%|█████████▌| 96/100 [21:17<00:53, 13.50s/epoch] 97%|█████████▋| 97/100 [21:31<00:40, 13.46s/epoch] 98%|█████████▊| 98/100 [21:44<00:26, 13.45s/epoch] 99%|█████████▉| 99/100 [21:57<00:13, 13.34s/epoch]100%|██████████| 100/100 [22:10<00:00, 13.28s/epoch]100%|██████████| 100/100 [22:10<00:00, 13.31s/epoch]
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           epoch ▁▁▂▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▅▆▆▆▆▆▆▆▇▇███
+wandb:        test_acc ▁▃▅▆▅██▇▇██▇▇▇▇█████▇▇▇▇▇█▇███▇▇▇▇█▇▇█▇▇
+wandb:         test_f1 ▁▃▄▇▇▇██▇████▇▇▇▇▇██▇▇▇▇█▇▇▇█▆▇▇▇▇▇▇▇▇▇▇
+wandb:  test_precision ▁▅▄▅▆▆▇████▇████▇▇▇▆▇███▇▇███▇█▇▇▇█▇▇▇▇▇
+wandb:     test_recall ▂▁▅▆▅▆▇██▆▇▅▇▇▇██▇▇▇▇▇▇▇▇▇▇█████▆▇▆▇█▇█▇
+wandb:       train_acc ▁▃▅▅▆█▇▇▇██████▇██████▇▇████████████████
+wandb:      train_loss █▇▄▃▂▂▂▂▂▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:          val_f1 ▁▂▅▅▆▇▁▇▆▇▇▇▁▇██▅▇▆▆██▇▆▇▇▇██▇▆▅▅▇▆▇█▇█▇
+wandb:   val_precision ▁▁▃▃▅█▇█▇▆███▇▇▇▇█████▇▇▇█▇█▇███▇▇█▇▇▇█▇
+wandb:      val_recall ▁▃▆▆▇▁▇▆▆▇▇▇▇▇▂▆▇██▇▇▆▇▆▇█▇▆▆▇▇▇▇▄▅▇█▇█▇
+wandb:  validation_acc ▁▃▆▇▇▇▇██▇████▇▇███▇██████▇████▇▇█▇▇████
+wandb: validation_loss █▅▅▄▄▂▂▂▁▆▂▂▂▁▂▂▂▂▃▂▂▂▃▃▄▄▂▃▃▃▂▃▃▃▄▄▂▃▃▆
+wandb: 
+wandb: Run summary:
+wandb:           epoch 99
+wandb:          run_id gc1tk2vl
+wandb:        test_acc 0.85833
+wandb:         test_f1 0.85782
+wandb:  test_precision 0.87016
+wandb:     test_recall 0.85833
+wandb:       train_acc 0.998
+wandb:      train_loss 0.00571
+wandb:          val_f1 0.83661
+wandb:   val_precision 0.85283
+wandb:      val_recall 0.84167
+wandb:  validation_acc 0.84167
+wandb: validation_loss 1.08109
+wandb: 
+wandb: 🚀 View run gallant-sweep-3 at: https://wandb.ai/idlcv/Video_early_initial/runs/gc1tk2vl
+wandb: ⭐️ View project at: https://wandb.ai/idlcv/Video_early_initial
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /work3/s164248/data/wandb/wandb/run-20241130_100050-gc1tk2vl/logs
+wandb: Agent Starting Run: i5cxetwq with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 100
+wandb: 	image_size: 224
+wandb: 	learning_rate: 0.001
+wandb: 	network: resnet18
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /work3/s164248/data/wandb/wandb/run-20241130_102307-i5cxetwq
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run stellar-sweep-4
+wandb: ⭐️ View project at https://wandb.ai/idlcv/Video_early_initial
+wandb: 🧹 View sweep at https://wandb.ai/idlcv/Video_early_initial/sweeps/ltfv6ki6
+wandb: 🚀 View run at https://wandb.ai/idlcv/Video_early_initial/runs/i5cxetwq
+Using cache found in /zhome/88/7/117159/.cache/torch/hub/pytorch_vision_v0.10.0
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0%|          | 0/100 [00:00<?, ?epoch/s]  1%|          | 1/100 [00:13<22:42, 13.76s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  2%|▏         | 2/100 [00:27<22:37, 13.85s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  3%|▎         | 3/100 [00:41<22:04, 13.65s/epoch]/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/zhome/88/7/117159/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+  4%|▍         | 4/100 [00:54<21:43, 13.58s/epoch]  5%|▌         | 5/100 [01:08<21:25, 13.53s/epoch]  6%|▌         | 6/100 [01:21<21:13, 13.55s/epoch]  7%|▋         | 7/100 [01:35<21:01, 13.56s/epoch]  8%|▊         | 8/100 [01:48<20:49, 13.58s/epoch]  9%|▉         | 9/100 [02:02<20:31, 13.54s/epoch] 10%|█         | 10/100 [02:16<20:28, 13.65s/epoch] 11%|█         | 11/100 [02:29<20:05, 13.55s/epoch] 12%|█▏        | 12/100 [02:42<19:49, 13.52s/epoch] 13%|█▎        | 13/100 [02:56<19:36, 13.52s/epoch] 14%|█▍        | 14/100 [03:10<19:30, 13.61s/epoch] 15%|█▌        | 15/100 [03:23<19:18, 13.63s/epoch] 16%|█▌        | 16/100 [03:37<19:09, 13.68s/epoch] 17%|█▋        | 17/100 [03:51<18:53, 13.66s/epoch]

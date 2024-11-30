@@ -36,13 +36,13 @@ parameters_dict = {
     #     'values' : [0.2, 0.5]
     # },
     'epochs' : {
-        'value': 10 ### change for true training
+        'value': 50 ### change for true training
     },
     'learning_rate' : {
-        "values": [0.001, 0.01]
+        "values": [0.001]
     },
     'batch_size': {
-        "values": [8, 16, 32, 64]
+        "values": [32]
     },
     'image_size':{
         'value': 224
@@ -60,8 +60,6 @@ sweep_config['parameters'] = parameters_dict
 sweep_id = wandb.sweep(sweep_config, project='Video_initial_resnet')
 
 import torch
-
-
 
 criterion = nn.CrossEntropyLoss()
 
@@ -86,13 +84,13 @@ def run_wandb(config=None):
         
         if config.network == "resnet18":
             model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True)
-            num_classes = 10  # Your custom number of output classes
+            num_classes = 10  
             model.fc = nn.Linear(model.fc.in_features, num_classes)
         elif config.network == "base_network":
             model = Base_Network(config.dropout, config.num_layers, num_classes=10) 
         model.to(device)
 
-        optimizer = build_optimizer(model, config.learning_rate)
+        optimizer = build_optimizer(model, config.learning_rate, weight_decay=1e-5)
 
         # Generate a random id for this run and this model
         _train_every_frame(model, optimizer, criterion, 

@@ -168,3 +168,16 @@ checkpoints/*
 .wandb/
 wandb
 wandb/*
+
+.images/
+images
+images/*
+
+.data/
+data
+data/*
+
+.vscode
+
+*.err
+*.out

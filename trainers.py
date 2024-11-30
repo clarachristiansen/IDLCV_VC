@@ -151,10 +151,13 @@ def _train_every_frame(model, optimizer, criterion, train_loader, validation_loa
 
         # Save model checkpoint
         if previous_val_acc > val_acc:
-            save_dir = "./checkpoints"
-            save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
-
-        previous_val_acc = val_acc
+            save_dir = "/work3/s164248/data/trained_models" # this also hardcoded, sorry.. 
+            try:
+                save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+            except: 
+                save_dir = "./checkpoints" # this also hardcoded, sorry.. 
+                save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
+            previous_val_acc = val_acc
         # Print progress
         print(f"Epoch {epoch+1}/{num_epochs}: "
               f"Train Loss: {train_loss:.3f}, Val Loss: {val_loss:.3f}, "

@@ -27,7 +27,7 @@ sweep_config = {
 }
 
 metric = {
-    'name': 'loss',
+    'name': 'validation_loss',
     'goal': 'minimize'
   }
 
@@ -36,34 +36,28 @@ parameters_dict = {
     #     'values' : [0.2, 0.5]
     # },
     'epochs' : {
-        'value': 100 ### change for true training
+        'value': 200 ### change for true training
     },
     'learning_rate' : {
-        "values": [0.001, 0.01]
+        "values": [0.01]#, 0.001]
     },
     'batch_size': {
-        "values": [8, 16, 32, 64]
+        "values": [32,64]
     },
     'image_size':{
         'value': 224
     },
-    # "num_layers": {
-    #     "values": list(range(4, 6))
-    # },
-    "network": {
-        "values": ["resnet18"]#vgg11#["base_network", "resnet18"]
-    }
 }
 early_stopping ={
         "type": "hyperband",
         "eta": 3,
-        "min_iter":10
+        "min_iter":30
      }
 sweep_config['metric'] = metric
 sweep_config['parameters'] = parameters_dict
 sweep_config['early_terminate'] = early_stopping
 
-sweep_id = wandb.sweep(sweep_config, project='Video_early_initial')
+sweep_id = wandb.sweep(sweep_config, project='Video_early_noleakage_try4')
 
 import torch
 from matplotlib import pyplot as plt
@@ -90,23 +84,24 @@ def run_wandb(config=None):
         framevideostack_loader_test = DataLoader(framevideostack_dataset_test,  batch_size=1, shuffle=False)
         
 
-
         # if config.network == "resnet18":
-       
-        # model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet34', pretrained=True)
-        # model = torch.hub.load('pytorch/vision:v0.10.0', 'vgg13', pretrained=True)
-        if config.network == "resnet18":
-            model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True)
-            model.conv1 = nn.Conv2d(in_channels=30, out_channels=64, kernel_size=(3,3), padding=(1,1), stride=(2,2), bias=False)
-            model.fc = nn.Linear(model.fc.in_features, 10)
-        elif config.network =="vgg11":
-            model = torch.hub.load('pytorch/vision:v0.10.0', 'vgg11', pretrained=True)
-            model.features[0] = nn.Conv2d(in_channels=30, out_channels=64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
-            model.classifier[6] = nn.Linear(in_features=model.classifier[6].in_features, out_features=10)
+        model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True)
 
+
+        # trying here with relu
+        model.conv1 = nn.Sequential(
+            nn.Conv2d(in_channels=30, out_channels=64, kernel_size=(7,7), padding=(3,3), stride=(2,2), bias=False),
+            # nn.ReLU()  
+        )
+
+        # model.conv1 = nn.Conv2d(in_channels=30, out_channels=64, kernel_size=(3,3), padding=(3,3), stride=(2,2), bias=False)
+        #trying with dropout in last fc
+        model.fc = nn.Sequential(                         # Apply dropout here
+            nn.Linear(model.fc.in_features, 10)                     # Final classification layer
+        )
         model.to(device)
 
-        optimizer = build_optimizer(model, config.learning_rate)
+        optimizer = build_optimizer(model, config.learning_rate, weight_decay=1e-1)
 
         # # Generate a random id for this run and this model
         _train_every_frame(model, optimizer, criterion, 
@@ -121,6 +116,7 @@ def run_wandb(config=None):
         
 if __name__ == '__main__':
     ''' Standard configurations '''
-    root_dir = './data/ufc10/'
+    root_dir = '/dtu/datasets1/02516/ucf101_noleakage'
+    # root_dir = '/zhome/88/7/117159/Courses/IDLCV_VC/data/ufc10/ufc10_no_leakage'
 
     wandb.agent(sweep_id, run_wandb)
