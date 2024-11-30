@@ -1,4 +1,4 @@
-from datasets_new import FrameImageDataset, get_transforms
+from datasets_new import FrameImageDataset, get_transforms, DualStreamDataset
 from models import Base_Network, build_optimizer, save_checkpoint, Dual_Stream
 from trainers import _train_every_frame
 
@@ -32,28 +32,17 @@ metric = {
   }
 
 parameters_dict = {
-    # 'dropout' : {
-    #     'values' : [0.2, 0.5]
-    # },
-    'epochs' : {
-        'value': 10 ### change for true training
-    },
-    'learning_rate' : {
-        "values": [0.001, 0.01]
-    },
-    'batch_size': {
-        "values": [8, 16, 32, 64]
-    },
-    'image_size':{
-        'value': 224
-    },
-    # "num_layers": {
-    #     "values": list(range(4, 6))
-    # },
-    "network": {
-        "values": ["resnet18"]#["base_network", "resnet18"]
-    }
+    'epochs': {'value': 10},
+    'learning_rate': {"values": [0.001, 0.01]},
+    'batch_size': {"values": [ 32, 64]},
+    'image_size': {'value': 224},
+    'num_conv_layers': {"values": [2, 3, 4]},  
+    'num_fc_layers': {"values": [1, 2, 3]},    
+    'dropout': {"values": [0.2, 0.0]},         
+    "network": {"values": ["dual_stream"]}
 }
+
+
 sweep_config['metric'] = metric
 sweep_config['parameters'] = parameters_dict
 
@@ -73,48 +62,93 @@ def run_wandb(config=None):
         config.run_id = run_id
         wandb.run.name = f"Run {run_id}"
         
-        data_transforms = get_transforms(rotation_degree = 30, transform_size = config.image_size)
+        data_transforms = get_transforms(rotation_degree=30, transform_size=config.image_size)
 
-        ''' Load data '''  
-        frameimage_dataset_train = FrameImageDataset(root_dir=root_dir, split='train', transform=data_transforms['train'])
-        frameimage_dataset_val = FrameImageDataset(root_dir=root_dir, split='val', transform=data_transforms['val'])
-        frameimage_dataset_test = FrameImageDataset(root_dir=root_dir, split='test', transform=data_transforms['test'])
+        if config.network == "dual_stream":
+            # Load DualStreamDataset for spatial and temporal inputs
+            dualstream_dataset_train = DualStreamDataset(
+                root_dir=root_dir, 
+                split='train', 
+                transform=data_transforms['train'], 
+                resize=(config.image_size, config.image_size), 
+                n_sampled_frames=10
+            )
+            dualstream_dataset_val = DualStreamDataset(
+                root_dir=root_dir, 
+                split='val', 
+                transform=data_transforms['val'], 
+                resize=(config.image_size, config.image_size), 
+                n_sampled_frames=10
+            )
+            dualstream_dataset_test = DualStreamDataset(
+                root_dir=root_dir, 
+                split='test', 
+                transform=data_transforms['test'], 
+                resize=(config.image_size, config.image_size), 
+                n_sampled_frames=10
+            )
 
-        frameimage_loader_train = DataLoader(frameimage_dataset_train,  batch_size=config.batch_size, shuffle=True)
-        frameimage_loader_val = DataLoader(frameimage_dataset_val,  batch_size=1, shuffle=False)
-        frameimage_loader_test = DataLoader(frameimage_dataset_test,  batch_size=1, shuffle=False)
-        
-        if config.network == "resnet18":
-            model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True)
-            num_classes = 10  # Your custom number of output classes
-            model.fc = nn.Linear(model.fc.in_features, num_classes)
-        elif config.network == "base_network":
-            model = Base_Network(config.dropout, config.num_layers, num_classes=10) 
-        elif config.network == "dual_stream":
+            dualstream_loader_train = DataLoader(dualstream_dataset_train, batch_size=config.batch_size, shuffle=True)
+            dualstream_loader_val = DataLoader(dualstream_dataset_val, batch_size=1, shuffle=False)
+            dualstream_loader_test = DataLoader(dualstream_dataset_test, batch_size=1, shuffle=False)
+
+            # Initialize Dual_Stream model
             model = Dual_Stream(
-            input_channels=3,  # Assuming RGB images for spatial input
-            num_conv_layers=config.num_conv_layers,  # Number of convolutional layers
-            num_fc_layers=config.num_fc_layers,  # Number of fully connected layers
-            base_channel_sz=64,  # Base channel size; adjust as needed
-            num_classes=10,  # Number of output classes
-            input_size=config.image_size,  # Image size (H, W)
-            dropout=config.dropout)  # Dropout rate
-        model.to(device)
-    
-        
+                input_channels=3,  # RGB for spatial input
+                num_conv_layers=config.num_conv_layers,
+                num_fc_layers=config.num_fc_layers,
+                base_channel_sz=64,
+                num_classes=10,
+                input_size=config.image_size,
+                dropout=config.dropout
+            )
+            train_loader = dualstream_loader_train
+            val_loader = dualstream_loader_val
+            test_loader = dualstream_loader_test
+            train_dataset = dualstream_dataset_train
+            val_dataset = dualstream_dataset_val
+            test_dataset = dualstream_dataset_test
+        else:
+            # Load FrameImageDataset for single-stream networks
+            frameimage_dataset_train = FrameImageDataset(root_dir=root_dir, split='train', transform=data_transforms['train'])
+            frameimage_dataset_val = FrameImageDataset(root_dir=root_dir, split='val', transform=data_transforms['val'])
+            frameimage_dataset_test = FrameImageDataset(root_dir=root_dir, split='test', transform=data_transforms['test'])
 
+            frameimage_loader_train = DataLoader(frameimage_dataset_train, batch_size=config.batch_size, shuffle=True)
+            frameimage_loader_val = DataLoader(frameimage_dataset_val, batch_size=1, shuffle=False)
+            frameimage_loader_test = DataLoader(frameimage_dataset_test, batch_size=1, shuffle=False)
+
+            if config.network == "resnet18":
+                model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True)
+                num_classes = 10  # Your custom number of output classes
+                model.fc = nn.Linear(model.fc.in_features, num_classes)
+            elif config.network == "base_network":
+                model = Base_Network(config.dropout, config.num_layers, num_classes=10)
+
+            train_loader = frameimage_loader_train
+            val_loader = frameimage_loader_val
+            test_loader = frameimage_loader_test
+            train_dataset = frameimage_dataset_train
+            val_dataset = frameimage_dataset_val
+            test_dataset = frameimage_dataset_test
+
+        model.to(device)
         optimizer = build_optimizer(model, config.learning_rate)
 
-        # Generate a random id for this run and this model
-        _train_every_frame(model, optimizer, criterion, 
-                            frameimage_loader_train,
-                            frameimage_loader_val,
-                            frameimage_loader_test,
-                            frameimage_dataset_train, 
-                            frameimage_dataset_val, 
-                            frameimage_dataset_test, 
-                            num_epochs=config.epochs, 
-                            run_id=config.run_id)
+        # Train and evaluate the model
+        _train_every_frame(
+            model=model,
+            optimizer=optimizer,
+            criterion=criterion,
+            train_loader=train_loader,
+            val_loader=val_loader,
+            test_loader=test_loader,
+            train_dataset=train_dataset,
+            val_dataset=val_dataset,
+            test_dataset=test_dataset,
+            num_epochs=config.epochs,
+            run_id=config.run_id
+        )
         
 if __name__ == '__main__':
     ''' Standard configurations '''
