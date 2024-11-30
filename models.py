@@ -52,7 +52,7 @@ class Base_Network(nn.Module):
 
         x = self.fully_connected(x)
         return x
-    
+
 
 def build_optimizer(model, learning_rate):
     ''' lets just select one, as we dont really see a performance difference between sgd and adam.. adam is usually better.'''
