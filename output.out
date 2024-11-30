@@ -5192,3 +5192,135 @@ Epoch 97/100: Train Loss: 0.309, Val Loss: 1.474, Train Acc: 92.2%, Val Acc: 74.
 Epoch 98/100: Train Loss: 0.178, Val Loss: 1.129, Train Acc: 94.4%, Val Acc: 75.8%
 Epoch 99/100: Train Loss: 0.110, Val Loss: 1.229, Train Acc: 96.0%, Val Acc: 75.8%
 Epoch 100/100: Train Loss: 0.033, Val Loss: 1.184, Train Acc: 99.2%, Val Acc: 78.3%
+Model checkpoint saved at epoch 0, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 1/100: Train Loss: 0.960, Val Loss: 3.004, Train Acc: 72.8%, Val Acc: 77.5%
+Model checkpoint saved at epoch 1, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 2/100: Train Loss: 0.545, Val Loss: 9.031, Train Acc: 85.0%, Val Acc: 45.8%
+Epoch 3/100: Train Loss: 0.434, Val Loss: 1.111, Train Acc: 87.0%, Val Acc: 70.8%
+Epoch 4/100: Train Loss: 0.218, Val Loss: 0.543, Train Acc: 95.4%, Val Acc: 85.0%
+Epoch 5/100: Train Loss: 0.085, Val Loss: 0.628, Train Acc: 98.4%, Val Acc: 85.0%
+Epoch 6/100: Train Loss: 0.096, Val Loss: 0.391, Train Acc: 97.0%, Val Acc: 87.5%
+Model checkpoint saved at epoch 6, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 7/100: Train Loss: 0.206, Val Loss: 0.579, Train Acc: 93.4%, Val Acc: 77.5%
+Model checkpoint saved at epoch 7, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 8/100: Train Loss: 0.347, Val Loss: 2.153, Train Acc: 90.6%, Val Acc: 65.8%
+Epoch 9/100: Train Loss: 0.207, Val Loss: 0.478, Train Acc: 93.4%, Val Acc: 86.7%
+Model checkpoint saved at epoch 9, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 10/100: Train Loss: 0.188, Val Loss: 3.819, Train Acc: 95.0%, Val Acc: 58.3%
+Epoch 11/100: Train Loss: 0.150, Val Loss: 0.449, Train Acc: 96.0%, Val Acc: 88.3%
+Epoch 12/100: Train Loss: 0.088, Val Loss: 0.338, Train Acc: 97.4%, Val Acc: 91.7%
+Model checkpoint saved at epoch 12, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 13/100: Train Loss: 0.051, Val Loss: 0.331, Train Acc: 98.4%, Val Acc: 90.8%
+Epoch 14/100: Train Loss: 0.045, Val Loss: 0.180, Train Acc: 98.8%, Val Acc: 94.2%
+Model checkpoint saved at epoch 14, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 15/100: Train Loss: 0.072, Val Loss: 0.371, Train Acc: 97.4%, Val Acc: 92.5%
+Model checkpoint saved at epoch 15, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 16/100: Train Loss: 0.056, Val Loss: 0.447, Train Acc: 98.8%, Val Acc: 90.0%
+Epoch 17/100: Train Loss: 0.048, Val Loss: 0.201, Train Acc: 99.0%, Val Acc: 95.8%
+Epoch 18/100: Train Loss: 0.026, Val Loss: 0.182, Train Acc: 99.0%, Val Acc: 95.8%
+Model checkpoint saved at epoch 18, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 19/100: Train Loss: 0.011, Val Loss: 0.223, Train Acc: 99.8%, Val Acc: 93.3%
+Epoch 20/100: Train Loss: 0.024, Val Loss: 0.318, Train Acc: 99.6%, Val Acc: 94.2%
+Model checkpoint saved at epoch 20, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 21/100: Train Loss: 0.012, Val Loss: 0.215, Train Acc: 99.4%, Val Acc: 93.3%
+Epoch 22/100: Train Loss: 0.031, Val Loss: 0.210, Train Acc: 99.2%, Val Acc: 95.0%
+Model checkpoint saved at epoch 22, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 23/100: Train Loss: 0.042, Val Loss: 0.279, Train Acc: 98.4%, Val Acc: 94.2%
+Model checkpoint saved at epoch 23, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 24/100: Train Loss: 0.057, Val Loss: 0.298, Train Acc: 98.0%, Val Acc: 90.0%
+Epoch 25/100: Train Loss: 0.048, Val Loss: 0.266, Train Acc: 98.4%, Val Acc: 90.8%
+Epoch 26/100: Train Loss: 0.045, Val Loss: 0.240, Train Acc: 98.8%, Val Acc: 90.8%
+Model checkpoint saved at epoch 26, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 27/100: Train Loss: 0.043, Val Loss: 0.659, Train Acc: 99.2%, Val Acc: 80.8%
+Epoch 28/100: Train Loss: 0.048, Val Loss: 0.337, Train Acc: 98.4%, Val Acc: 90.0%
+Epoch 29/100: Train Loss: 0.025, Val Loss: 0.302, Train Acc: 99.4%, Val Acc: 90.8%
+Model checkpoint saved at epoch 29, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 30/100: Train Loss: 0.025, Val Loss: 0.562, Train Acc: 99.2%, Val Acc: 88.3%
+Epoch 31/100: Train Loss: 0.042, Val Loss: 0.429, Train Acc: 99.0%, Val Acc: 90.8%
+Model checkpoint saved at epoch 31, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 32/100: Train Loss: 0.079, Val Loss: 1.316, Train Acc: 97.4%, Val Acc: 74.2%
+Epoch 33/100: Train Loss: 0.075, Val Loss: 1.254, Train Acc: 97.8%, Val Acc: 76.7%
+Epoch 34/100: Train Loss: 0.060, Val Loss: 0.702, Train Acc: 98.4%, Val Acc: 85.0%
+Epoch 35/100: Train Loss: 0.033, Val Loss: 0.293, Train Acc: 99.2%, Val Acc: 93.3%
+Epoch 36/100: Train Loss: 0.041, Val Loss: 0.262, Train Acc: 98.2%, Val Acc: 94.2%
+Model checkpoint saved at epoch 36, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 37/100: Train Loss: 0.139, Val Loss: 0.823, Train Acc: 96.4%, Val Acc: 83.3%
+Model checkpoint saved at epoch 37, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 38/100: Train Loss: 0.077, Val Loss: 0.735, Train Acc: 97.4%, Val Acc: 82.5%
+Epoch 39/100: Train Loss: 0.017, Val Loss: 0.195, Train Acc: 99.8%, Val Acc: 92.5%
+Epoch 40/100: Train Loss: 0.016, Val Loss: 0.202, Train Acc: 99.2%, Val Acc: 95.8%
+Model checkpoint saved at epoch 40, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 41/100: Train Loss: 0.022, Val Loss: 0.196, Train Acc: 99.6%, Val Acc: 95.0%
+Model checkpoint saved at epoch 41, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 42/100: Train Loss: 0.012, Val Loss: 0.218, Train Acc: 99.6%, Val Acc: 91.7%
+Epoch 43/100: Train Loss: 0.010, Val Loss: 0.311, Train Acc: 99.6%, Val Acc: 92.5%
+Epoch 44/100: Train Loss: 0.016, Val Loss: 0.186, Train Acc: 99.8%, Val Acc: 92.5%
+Model checkpoint saved at epoch 44, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 45/100: Train Loss: 0.027, Val Loss: 0.477, Train Acc: 99.0%, Val Acc: 88.3%
+Model checkpoint saved at epoch 45, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 46/100: Train Loss: 0.053, Val Loss: 0.420, Train Acc: 98.4%, Val Acc: 87.5%
+Model checkpoint saved at epoch 46, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 47/100: Train Loss: 0.062, Val Loss: 1.264, Train Acc: 97.0%, Val Acc: 79.2%
+Epoch 48/100: Train Loss: 0.052, Val Loss: 0.453, Train Acc: 98.2%, Val Acc: 89.2%
+Epoch 49/100: Train Loss: 0.027, Val Loss: 0.674, Train Acc: 99.4%, Val Acc: 90.8%
+Model checkpoint saved at epoch 49, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 50/100: Train Loss: 0.055, Val Loss: 0.269, Train Acc: 98.2%, Val Acc: 89.2%
+Model checkpoint saved at epoch 50, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 51/100: Train Loss: 0.037, Val Loss: 0.415, Train Acc: 98.6%, Val Acc: 87.5%
+Epoch 52/100: Train Loss: 0.036, Val Loss: 0.252, Train Acc: 98.6%, Val Acc: 91.7%
+Model checkpoint saved at epoch 52, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 53/100: Train Loss: 0.054, Val Loss: 0.343, Train Acc: 98.8%, Val Acc: 90.8%
+Epoch 54/100: Train Loss: 0.034, Val Loss: 0.306, Train Acc: 99.0%, Val Acc: 90.8%
+Epoch 55/100: Train Loss: 0.006, Val Loss: 0.350, Train Acc: 99.8%, Val Acc: 90.8%
+Epoch 56/100: Train Loss: 0.002, Val Loss: 0.225, Train Acc: 100.0%, Val Acc: 93.3%
+Epoch 57/100: Train Loss: 0.001, Val Loss: 0.217, Train Acc: 100.0%, Val Acc: 94.2%
+Epoch 58/100: Train Loss: 0.000, Val Loss: 0.213, Train Acc: 100.0%, Val Acc: 94.2%
+Model checkpoint saved at epoch 58, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 59/100: Train Loss: 0.000, Val Loss: 0.231, Train Acc: 100.0%, Val Acc: 93.3%
+Epoch 60/100: Train Loss: 0.000, Val Loss: 0.225, Train Acc: 100.0%, Val Acc: 94.2%
+Epoch 61/100: Train Loss: 0.000, Val Loss: 0.215, Train Acc: 100.0%, Val Acc: 94.2%
+Epoch 62/100: Train Loss: 0.000, Val Loss: 0.211, Train Acc: 100.0%, Val Acc: 94.2%
+Epoch 63/100: Train Loss: 0.000, Val Loss: 0.207, Train Acc: 100.0%, Val Acc: 94.2%
+Epoch 64/100: Train Loss: 0.000, Val Loss: 0.201, Train Acc: 100.0%, Val Acc: 95.0%
+Epoch 65/100: Train Loss: 0.000, Val Loss: 0.212, Train Acc: 100.0%, Val Acc: 95.0%
+Epoch 66/100: Train Loss: 0.000, Val Loss: 0.208, Train Acc: 100.0%, Val Acc: 95.8%
+Model checkpoint saved at epoch 66, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 67/100: Train Loss: 0.000, Val Loss: 0.209, Train Acc: 100.0%, Val Acc: 95.0%
+Epoch 68/100: Train Loss: 0.000, Val Loss: 0.208, Train Acc: 100.0%, Val Acc: 95.8%
+Model checkpoint saved at epoch 68, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 69/100: Train Loss: 0.000, Val Loss: 0.205, Train Acc: 100.0%, Val Acc: 95.0%
+Epoch 70/100: Train Loss: 0.000, Val Loss: 0.203, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 71/100: Train Loss: 0.000, Val Loss: 0.201, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 72/100: Train Loss: 0.000, Val Loss: 0.196, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 73/100: Train Loss: 0.000, Val Loss: 0.204, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 74/100: Train Loss: 0.000, Val Loss: 0.205, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 75/100: Train Loss: 0.000, Val Loss: 0.210, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 76/100: Train Loss: 0.000, Val Loss: 0.206, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 77/100: Train Loss: 0.000, Val Loss: 0.198, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 78/100: Train Loss: 0.000, Val Loss: 0.206, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 79/100: Train Loss: 0.000, Val Loss: 0.204, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 80/100: Train Loss: 0.000, Val Loss: 0.201, Train Acc: 100.0%, Val Acc: 95.8%
+Model checkpoint saved at epoch 80, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 81/100: Train Loss: 0.000, Val Loss: 0.202, Train Acc: 100.0%, Val Acc: 95.0%
+Epoch 82/100: Train Loss: 0.000, Val Loss: 0.192, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 83/100: Train Loss: 0.000, Val Loss: 0.190, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 84/100: Train Loss: 0.000, Val Loss: 0.203, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 85/100: Train Loss: 0.000, Val Loss: 0.195, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 86/100: Train Loss: 0.000, Val Loss: 0.201, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 87/100: Train Loss: 0.000, Val Loss: 0.190, Train Acc: 100.0%, Val Acc: 95.8%
+Model checkpoint saved at epoch 87, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 88/100: Train Loss: 0.000, Val Loss: 0.198, Train Acc: 100.0%, Val Acc: 95.0%
+Epoch 89/100: Train Loss: 0.000, Val Loss: 0.200, Train Acc: 100.0%, Val Acc: 95.0%
+Epoch 90/100: Train Loss: 0.000, Val Loss: 0.196, Train Acc: 100.0%, Val Acc: 95.8%
+Model checkpoint saved at epoch 90, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 91/100: Train Loss: 0.000, Val Loss: 0.210, Train Acc: 100.0%, Val Acc: 95.0%
+Epoch 92/100: Train Loss: 0.000, Val Loss: 0.201, Train Acc: 100.0%, Val Acc: 95.0%
+Epoch 93/100: Train Loss: 0.000, Val Loss: 0.203, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 94/100: Train Loss: 0.000, Val Loss: 0.191, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 95/100: Train Loss: 0.000, Val Loss: 0.202, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 96/100: Train Loss: 0.000, Val Loss: 0.197, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 97/100: Train Loss: 0.000, Val Loss: 0.194, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 98/100: Train Loss: 0.000, Val Loss: 0.199, Train Acc: 100.0%, Val Acc: 95.8%
+Epoch 99/100: Train Loss: 0.000, Val Loss: 0.203, Train Acc: 100.0%, Val Acc: 95.8%
+Model checkpoint saved at epoch 99, name: ./checkpoints/checkpoint_x2q339jb.pth
+Epoch 100/100: Train Loss: 0.000, Val Loss: 0.205, Train Acc: 100.0%, Val Acc: 95.0%
