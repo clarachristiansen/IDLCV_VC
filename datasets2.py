@@ -59,7 +59,10 @@ class FrameVideoDataset(torch.utils.data.Dataset):
 
         if self.transform:
             # Apply consistent transformations to all frames at once
-            frames = self.transform(video_frames)
+            try:
+                frames = self.transform(video_frames)
+            except: 
+                frames = [self.transform(frame) for frame in video_frames]
             if not isinstance(frames, list):
                 frames = [frames]
         else:
