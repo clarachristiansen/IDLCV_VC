@@ -150,7 +150,7 @@ def _train_every_frame(model, optimizer, criterion, train_loader, validation_loa
             })
 
         # Save model checkpoint
-        if previous_val_acc > val_acc:
+        if previous_val_acc < val_acc: #THIS HAS BEEN CORRECTED NOW!!!
             save_dir = "/work3/s164248/data/trained_models" # this also hardcoded, sorry.. 
             try:
                 save_checkpoint(model, optimizer, epoch, f"{save_dir}/checkpoint_{run_id}.pth")
