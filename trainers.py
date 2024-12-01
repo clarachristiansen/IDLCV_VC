@@ -110,7 +110,7 @@ def _train_every_frame(model, optimizer, criterion, train_loader, validation_loa
         'train_loss': [],
         'validation_loss': [],
     }
-    previous_val_acc = 1000000
+    previous_val_acc = 0
 
     for epoch in tqdm(range(num_epochs), unit='epoch'):
         # Training
